@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Alt.css">
+<title> Prezentare </title>
+<meta charset="utf-8"/>
+<script>
+function transitionToPage(href) {
+    document.querySelector('body').style.opacity = 0;
+    setTimeout(function() { 
+        window.location.href = href
+    }, 500)
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('body').style.opacity = 1
+})
+</script>
+</head>
+
+<body>
+    
+<main class="outerContainer">
+    <header>
+        <span onclick="transitionToPage('index.html')" class="home">Home</span>
+        <span onclick="transitionToPage('country1.html')" class="countries">Country1</span>
+        <span onclick="transitionToPage('')" class="countries">Country2</span>
+        <span onclick="transitionToPage('')" class="stock">Stock1</span>
+        <span onclick="transitionToPage('')" class="stock">Stock2</span>
+        <span onclick="transitionToPage('')" class="crypto">Crypto1</span>
+        <span onclick="transitionToPage('')" class="crypto">Crypto2</span>
+    </header>
+
+    <div class="flexRow">
+    <div class="flexColumn">
+        <h2> --- Welcome ---</h2>
+        <h1>This is < ChartR ></h1>
+        <img class="homeWallpaper" src="homeWallpaper.png">
+        <h2>Educational platform for curious minds, seeking to present financial and economic data structured in readable,</h2> 
+        <h2>fashionable structures, with interactive charts.</h2>
+        <a href="https://github.com/Autumn-Internship/ChartR" target="_blank"> Visit our GitHub repo! </a>
+    </div>
+    </div>
+
+    <footer>
+        <p> ChartR team [Sale Razvan-Stelian & Andrei Grigor] @ 2021</p>
+    </footer>
+</main>
+
+</body>
+</html>

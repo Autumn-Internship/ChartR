@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+margin: 0;
+opacity: 0;
+background-image: url("https://wallpapercave.com/wp/wp2003015.jpg");
+background-size: cover;
+height: 100%;
+transition: opacity .5s;
+}
+
+.outerContainer {
+	background-image: url("https://webgradients.com/public/webgradients_png/089%20Premium%20White.png");
+	background-size: cover;
+	outline: 0.25vh solid black;
+	width: 85%;
+	margin: 4% auto;
+	opacity: 0.92;
+	border-radius: 2.5%;
+}
+
+header{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+header span {
+font-weight: bold;
+color: black;
+font-size: 2vh;
+padding: 1% 2.5%;
+font-family: 'Federo';
+text-transform: uppercase;
+cursor: pointer;
+}
+
+header span:hover {
+	font-size: 2.25vh;
+	transition: 0.5s;
+}
+
+.countries {
+	color: royalblue;
+}
+
+.stock {
+	color: #058ED9
+}
+
+.crypto {
+	color: #715AFF
+}
+
+.home {
+	color: #A3333D
+}
+
+.homeWallpaper {
+	height: 35%;
+	width: 35%;
+}
+
+.flexRow {
+margin-top: 2.5vh;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.flexColumn {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.flexRow h1 {
+font-size: 5vh;
+font-family: 'Federo';
+color: royalblue;
+}
+
+.flexRow h2 {
+font-size: 2vh; 
+font-weight: bold; 
+font-family: 'Federo';
+}
+
+.flexRow a {
+	font-size: 2vh;  
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: whitesmoke;
+	padding: 2vh 2vw;
+	outline: 0.2vh solid black;
+	background-color: royalblue;
+	cursor: pointer;
+	text-decoration: none;
+	margin-top: 5%;
+	}
+
+.pozaCV:hover, .flexRow a:hover, footer img:hover {
+	box-shadow: 0 16px 20px 0 rgba(0,0,0,0.4), 0 20px 60px 0 rgba(0,0,0,0.4);
+	transition: box-shadow 0.5s;
+	transform: scale(1.1);
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+	
+
+
+footer {
+display: flex;
+margin-top: 2%;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+footer p {
+	font-size: 1.5vh;
+	font-weight: bold;
+	color: black; 
+	font-family: 'Federo';
+}
