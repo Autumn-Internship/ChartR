@@ -2,6 +2,7 @@
 <h2 align=center> Sale Razvan & Andrei Grigor </h2>
 <h2 align=center><img src="ChartR.png" height="100" width="125"></h2>
 
+<p align=center><a href="https://salerazvan.github.io/home">Link</a></p>
 
 ## High-level overview ##
 Educational platform for curious minds, seeking to present some financial and economic data structured in eligible, fashionable structures, with interactive charts.
