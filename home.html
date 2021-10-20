@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="Alt.css">
-<title> Prezentare </title>
+<link rel="stylesheet" type="text/css" href="general.css">
+<link rel="stylesheet" type="text/css" href="home.css">
+<title> ChartR </title>
 <meta charset="utf-8"/>
 <script>
 function transitionToPage(href) {
     document.querySelector('body').style.opacity = 0;
+    document.querySelector('body').style.transition = '.5s';
     setTimeout(function() { 
         window.location.href = href
     }, 500)
@@ -14,6 +16,7 @@ function transitionToPage(href) {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('body').style.opacity = 1
+    document.querySelector('body').style.transition = '.5s'
 })
 </script>
 </head>
@@ -22,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
 <main class="outerContainer">
     <header>
-        <span onclick="transitionToPage('index.html')" class="home">Home</span>
+        <span onclick="transitionToPage('home.html')" class="home">Home</span>
         <span onclick="transitionToPage('country1.html')" class="countries">Country1</span>
         <span onclick="transitionToPage('')" class="countries">Country2</span>
         <span onclick="transitionToPage('')" class="stock">Stock1</span>

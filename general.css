@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+background-image: url("https://wallpapercave.com/wp/wp2003015.jpg");
+background-size: cover;
+height: 100%;
+
+}
+
+.outerContainer {
+background-image: url("https://webgradients.com/public/webgradients_png/089%20Premium%20White.png");
+background-size: cover;
+outline: 0.25vh solid black;
+width: 85%;
+margin: 4% auto;
+opacity: 0.92;
+border-radius: 2.5%;
+}
+
+header {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+header span {
+font-weight: bold;
+color: black;
+font-size: 2vh;
+padding: 1% 2.5%;
+font-family: 'Federo';
+text-transform: uppercase;
+cursor: pointer;
+}
+
+header span:hover {
+font-size: 2.25vh;
+transition: 0.5s;
+}
+
+.countries {
+color: royalblue;
+}
+
+.stock {
+color: #058ED9
+}
+
+.crypto {
+color: #715AFF
+}
+
+.home {
+color: #A3333D
+}
+
+footer {
+    display: flex;
+    margin-top: 2%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    footer p {
+    font-size: 1.5vh;
+    font-weight: bold;
+    color: black; 
+    font-family: 'Federo';
+    }

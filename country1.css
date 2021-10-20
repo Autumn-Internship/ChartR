@@ -1,0 +1,67 @@
+.flexRow {
+margin-top: 4vh;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+}
+
+.flexColumn {
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 65vh;
+width: 40%;
+}
+
+.flexInfo, .flexInfo2 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.flexInfoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h1 {
+text-align: center;
+font-family: 'Federo';
+font-size: 4vh;
+color: firebrick;
+}
+
+h2 {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 2vh;
+font-weight: bold;
+color: black;
+margin: 1.25% 10%;
+}
+
+.steag {
+width: 30%;
+outline: 0.225vh solid black;
+}
+
+.poza {
+height: 55vh;
+width: 45%;
+align-self: center;
+outline: 0.4vh solid black;
+}
+
+.poza:hover, .steag:hover {
+box-shadow: 0 16px 20px 0 rgba(0,0,0,0.4), 0 20px 60px 0 rgba(0,0,0,0.4);
+transition: box-shadow 0.5s;
+transform: scale(1.1);
+transition: transform 0.5s;
+}
+
+.France {
+    display: none;
+    opacity: 0;
+    transition: opacity .5s;
+}
