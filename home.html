@@ -1,24 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="general.css">
-<link rel="stylesheet" type="text/css" href="home.css">
+<link rel="stylesheet" type="text/css" href="styles/general.css">
+<link rel="stylesheet" type="text/css" href="styles/home.css">
 <title> ChartR </title>
 <meta charset="utf-8"/>
-<script>
-function transitionToPage(href) {
-    document.querySelector('body').style.opacity = 0;
-    document.querySelector('body').style.transition = '.5s';
-    setTimeout(function() { 
-        window.location.href = href
-    }, 500)
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('body').style.opacity = 1
-    document.querySelector('body').style.transition = '.5s'
-})
-</script>
+<script src="scripts/transitionToPage.js"></script>
 </head>
 
 <body>
@@ -38,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="flexColumn">
         <h2> --- Welcome ---</h2>
         <h1>This is < ChartR ></h1>
-        <img class="homeWallpaper" src="homeWallpaper.png">
+        <img class="homeWallpaper" src="imagini/homeWallpaper.png">
         <h2>Educational platform for curious minds, seeking to present financial and economic data structured in readable,</h2> 
         <h2>fashionable structures, with interactive charts.</h2>
         <a href="https://github.com/Autumn-Internship/ChartR" target="_blank"> Visit our GitHub repo! </a>
