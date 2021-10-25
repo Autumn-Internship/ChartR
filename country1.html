@@ -1,41 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="general.css">
-<link rel="stylesheet" type="text/css" href="country1.css">
+<link rel="stylesheet" type="text/css" href="styles/general.css">
+<link rel="stylesheet" type="text/css" href="styles/country1.css">
 <title> ChartR </title>
 <meta charset="utf-8"/>
-<script>
-function transitionToPage(href) {
-    document.querySelector('body').style.opacity = 0;
-    document.querySelector('body').style.transition = '.5s';
-    setTimeout(function() { 
-        window.location.href = href
-    }, 500)
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('body').style.opacity = 1
-    document.querySelector('body').style.transition = '.5s'
-})
-
-const countries = ['.Germany', '.France'];
-let index = 0;
-
-function transitionToCountry(country) {
-    document.querySelector(country).style.opacity = 0;
-    document.querySelector(country).style.transition = '.5s';
-    setTimeout(function() { 
-        document.querySelector(country).style.display = 'none';
-    }, 500)
-    setTimeout(function() { 
-        document.querySelector(countries[index+1]).style.display = 'initial';
-        document.querySelector(countries[index+1]).style.opacity = 1;
-    }, 500)
-    
-}
-
-</script>
+<script src="scripts/transitionToPage.js"></script>
+<script src="scripts/transitionToCountry.js"></script>
 </head>
 
 <body>
@@ -51,12 +22,13 @@ function transitionToCountry(country) {
         <span onclick="transitionToPage('')" class="crypto">Crypto2</span>
     </header>
 
-    <div class="Germany">
+    <div class="currentCountry">
     <div class="flexRow">
-        <img src="https://s2.best-wallpaper.net/wallpaper/5120x2880/1810/Castle-trees-autumn-village-Germany_5120x2880.jpg" class="poza">
+    <p onclick="prevCountry()" class="arrow">🢀</p>
+        <img src="imagini/germany.jpg" class="poza">
     <div class="flexColumn">
         <h1>Germany</h1>
-        <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png" class="steag"></h1>
+        <h1><img src="imagini/germanyFlag.png" class="steag"></h1>
         <div class="flexInfoRow">
         <div class="flexInfo">
         <h2>Capital: Berlin</h2>
@@ -64,8 +36,8 @@ function transitionToCountry(country) {
         <h2>Government: Federal parliamentary republic</h2>
         <h2>Area: 357.022 km<sup>2</sup></h2>
         <h2>Population: 83.190.556</h2>
-        <h2>HDI: 0.947</h2>
-        <h2>Inflation: 0.5%</h2>
+        <h2>HDI: 0,947</h2>
+        <h2>Inflation: 0,5%</h2>
         <h2>Average Gross Salary: 4.450 $ (monthly)</h2>
         </div>
         <div class="flexInfo2">
@@ -73,48 +45,16 @@ function transitionToCountry(country) {
         <h2>Per Capita: 56.956 $</h2>
         <h2>GDP (Nominal): 4,319 trillion $</h2>
         <h2>Per Capita: 51.860 $</h2>
-        <h2>GINI: 29.7 (low)</h2>
+        <h2>GINI: 29,7 (low)</h2>
         <h2>Currency: Euro ($)</h2>
-        <h2>Unemployment: 4.4%</h2>
+        <h2>Unemployment: 4,4%</h2>
         <h2>Average Net Salary: 2.705 $ (monthly)</h2>
         </div>
         </div>
         </div>
-        <button onclick="transitionToCountry('.Germany')">Test</button>
+    <p onclick="nextCountry()" class="arrow">🢂</p>
     </div>
     </div>
-
-    <div class="France">
-        <div class="flexRow">
-            <img src="https://images.wallpapersden.com/image/download/eiffel-tower-paris-france_ZmtrZW6UmZqaraWkpJRnamtlrWZpaWU.jpg" class="poza">
-        <div class="flexColumn">
-            <h1>France</h1>
-            <h1><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" class="steag"></h1>
-            <div class="flexInfoRow">
-            <div class="flexInfo">
-            <h2>Capital: Paris</h2>
-            <h2>Official Language: French</h2>
-            <h2>Government: Federal parliamentary republic</h2>
-            <h2>Area: 357.022 km<sup>2</sup></h2>
-            <h2>Population: 83.190.556</h2>
-            <h2>HDI: 0.947</h2>
-            <h2>Inflation: 0.5%</h2>
-            <h2>Average Gross Salary: 4.450 $ (monthly)</h2>
-            </div>
-            <div class="flexInfo2">
-            <h2>GDP (PPP): 4,743 trillion $</h2>
-            <h2>Per Capita: 56.956 $</h2>
-            <h2>GDP (Nominal): 4,319 trillion $</h2>
-            <h2>Per Capita: 51.860 $</h2>
-            <h2>GINI: 29.7 (low)</h2>
-            <h2>Currency: Euro ($)</h2>
-            <h2>Unemployment: 4.4%</h2>
-            <h2>Average Net Salary: 2.705 $ (monthly)</h2>
-            </div>
-            </div>
-            </div>
-        </div>
-        </div>
 
 <footer>
     <p> ChartR team [Sale Razvan-Stelian & Andrei Grigor] @ 2021</p>
