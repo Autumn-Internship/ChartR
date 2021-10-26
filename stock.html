@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles/general.css">
+<link rel="stylesheet" type="text/css" href="styles/country1.css">
+<title> ChartR </title>
+<meta charset="utf-8"/>
+<script src="scripts/transitionToPage.js"></script>
+<script src="scripts/transitionToCountry.js"></script>
+</head>
+
+<body>
+    
+<main class="outerContainer">
+    <header>
+        <span onclick="transitionToPage('home.html')" class="home">Home</span>
+        <span onclick="transitionToPage('country1.html')" class="countries">Country1</span>
+        <span onclick="transitionToPage('')" class="countries">Country2</span>
+        <span onclick="transitionToPage('')" class="stock">Stock1</span>
+        <span onclick="transitionToPage('')" class="stock">Stock2</span>
+        <span onclick="transitionToPage('')" class="crypto">Crypto1</span>
+        <span onclick="transitionToPage('')" class="crypto">Crypto2</span>
+    </header>
+
+    <form action="">
+        <input type="text" name="stock_name" id="stock_name">
+        <button onclick="getData()" type="button">Search</button>
+    </form>
+
+<footer>
+    <p> ChartR team [Sale Razvan-Stelian & Andrei Grigor] @ 2021</p>
+</footer>
+</main>
+<script type="text/javascript" src="./scripts/stocks.js"></script>
+</body>
+</html>
