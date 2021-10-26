@@ -31,6 +31,7 @@ The primary topics we are interested in covering are crypto, stock exchange and 
   #### [Week 2] ####
   - Cover and finish the first two tabs (Country data & Stock exchange);
   - Stuff to implement: 
+    - Capture and manipulate data from the server/API - (https://fcsapi.com/ - Documentation) 
     - Graphs using a JS library,
     - Country data comparison using Radar charts, other relevant stock charts,
     - Country data trend charts, stock evolution in time
