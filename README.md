@@ -4,7 +4,7 @@
 
 <p align=center><a href="https://salerazvan.github.io/home">Link</a></p>
 
-<h1 align=center> High-level overview </h1>
+## High-level overview ## 
 Educational platform for curious minds, seeking to present some financial and economic data structured in eligible, fashionable structures, with interactive charts.
 
 The primary topics we are interested in covering are crypto, stock exchange and country data. 
@@ -20,7 +20,7 @@ The primary topics we are interested in covering are crypto, stock exchange and 
   ### Crypto ###
   1) [TBA]
 
-<h2 align=center> Timeline </h2>
+## Timeline ##
 
   #### [Week 1] ####
   - Setup a JSON-Server for testing purposes;
