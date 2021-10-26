@@ -10,7 +10,7 @@ Educational platform for curious minds, seeking to present some financial and ec
 The primary topics we are interested in covering are crypto, stock exchange and country data. 
 
   ### Country data ###
-  1) Organizing data in a sortable table
+  1) Organizing data as navigable sliders
   2) Available comparisons via Radar chart for multiple indices for union states
   3) Trend charts
   
@@ -19,3 +19,19 @@ The primary topics we are interested in covering are crypto, stock exchange and 
 
   ### Crypto ###
   1) [TBA]
+
+<h2 align=center> Timeline </h2>
+
+  #### [Week 1] ####
+  - Setup a JSON-Server for testing purposes;
+  - Designing the general UI;
+  - Drawing general scheme of the project, understanding API endpoints;
+  - Optional: cover at least one topic in the Country and Stock exchange tabs
+
+  #### [Week 2] ####
+  - Cover and finish the first two tabs (Country data & Stock exchange);
+  - Stuff to implement: 
+    - Graphs using a JS library,
+    - Country data comparison using Radar charts, other relevant stock charts,
+    - Country data trend charts, stock evolution in time
+  - Optional: move the DB to Heroku
