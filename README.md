@@ -4,7 +4,7 @@
 
 <p align=center><a href="https://salerazvan.github.io/home">Link</a></p>
 
-## High-level overview ##
+<h1 align=center> High-level overview </h1>
 Educational platform for curious minds, seeking to present some financial and economic data structured in eligible, fashionable structures, with interactive charts.
 
 The primary topics we are interested in covering are crypto, stock exchange and country data. 
