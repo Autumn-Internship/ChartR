@@ -11,14 +11,6 @@ let data1;
 let high1=[];
 let data2;
 let high2=[];
-const idDNK=9;
-const idBGL=629;
-const idCRK=659;
-const idSEK=68;
-const idCZK=645;
-const idHUF=661;
-const idPLZ=704;
-const idRON=707;
 // get the name of the stock you want to see details for
 
 function getCMP(){
