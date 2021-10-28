@@ -1,25 +1,22 @@
 // set API key for the stocks API.
 const API_KEY='XaDgjz85YrsHihbcukvR';
 let country;
-let countryData=[];
+let euro_dnk;
+let euro_dnk_high=[];
 // get the name of the stock you want to see details for
 
-const input=document.getElementById('stock_name');
 
-// run fetch for the stock data
-function getCountry(){
-    country = input.value;
-    console.log(input.value)
-}
-
-function getData(){
-    getCountry();
-    fetch(`https://fcsapi.com/api-v3/stock/indices?country=${country}&access_key=${API_KEY}`)
+async function getData(){
+    await fetch(`https://fcsapi.com/api-v3/forex/history?id=9&period=month&access_key=${API_KEY}`)
     .then(res => res.json())
-    .then(data => console.log(data['response']))
+    .then(data => {
+        euro_dnk= data['response'];
+    })
     .catch(err => console.log(err));
 
-    // console.log(countryData);
-    return countryData;
+    for(const [key, value] of Object.entries(euro_dnk)){
+        euro_dnk_high= [...euro_dnk_high, value.h];
+    }
+    console.log(euro_dnk_high);
 }
 // parse it in a format easy to use in chartJS
