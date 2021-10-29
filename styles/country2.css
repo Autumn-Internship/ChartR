@@ -1,0 +1,64 @@
+:root {
+  --usedFont: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.flexRow {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: var(--usedFont);
+  font-size: 2vh;
+  font-weight: bold;
+  color: firebrick;
+  text-align: center;
+}
+
+#country1,
+#country2 {
+  font-family: var(--usedFont);
+  width: 15vw;
+  height: 5vh;
+  font-size: 1.75vh;
+  text-align: center;
+  outline: 0.2vh solid black;
+}
+
+#country1:hover,
+#country2:hover {
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+
+#compareButton {
+  width: 7.5vw;
+  height: 7.5vh;
+  align-self: center;
+  text-align: center;
+  font-size: 1.75vh;
+  border-radius: 10%;
+  border: 0.225vh solid black;
+  margin-top: 15%;
+  font-family: var(--usedFont);
+}
+
+#compareButton:hover {
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
+  color: white;
+  background-color: royalblue;
+  transition: 0.5s;
+}
+
+#myChart {
+  width: 30vw;
+}

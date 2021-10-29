@@ -43,25 +43,24 @@ h2 {
   margin: 1.25% 10%;
 }
 
-.steag {
+.flag {
   width: 10vw;
   height: 12.5vh;
   outline: 0.225vh solid black;
 }
 
-.poza {
+.image {
   height: 55vh;
   width: 42.5%;
   align-self: center;
   outline: 0.4vh solid black;
 }
 
-.poza:hover,
-.steag:hover {
+.image:hover,
+.flag:hover {
   box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.5s;
   transform: scale(1.1);
-  transition: transform 0.5s;
+  transition: 0.5s;
 }
 
 .arrow {
