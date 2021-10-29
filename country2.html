@@ -6,6 +6,8 @@
 <title> ChartR </title>
 <meta charset="utf-8"/>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts/transitionToPage.js"></script>
+<script src="scripts/transitionToComparison.js"></script>
 </head>
 
 <body>
@@ -21,7 +23,9 @@
         <span onclick="transitionToPage('')" class="crypto">Crypto2</span>
     </header>
 
+    <div class="firstComparison">
     <div class="flexRow">
+        <p onclick="prevComparison()" class="arrow">🢀</p>
     <div class="flexColumn">
         <h2>Select first country</h2>
         <select name="country1" id="country1">
@@ -86,19 +90,40 @@
             <option value="Malta">Malta</option>
         </select>
     </form>
-    <button id="compareButton" onclick="generateCountryGraph()">GENERATE</button>
+    <button id="compareButton" onclick="generateRadarChart()">GENERATE</button>
     </div>
-    <div>
-        <canvas id="myChart"></canvas>
+    <div style = "width: 27.5vw">
+        <canvas id="radarChart"></canvas>
       </div>
+      <p onclick="nextComparison(); generateBarChart()" class="arrow">🢂</p>
     </div>
+    </div>
+
+    <div class="secondComparison">
+        <div class="flexRow">
+            <p onclick="prevComparison()" class="arrow">🢀</p>
+            <div class="flexColumn">
+            <h2>Largest economies of the EU</h2>
+            <div style = "width: 25vw; height: 30vh">
+                <canvas id="barChart"></canvas>
+              </div>
+            </div>
+            <h2>Highest-paid folk in the EU</h2>
+            <h2>Most developed places in the EU</h2>
+            <p onclick="nextComparison()" class="arrow">🢂</p>
+        </div>
+        </div>
+
+
+
 
 <footer>
     <p> ChartR team [Sale Razvan-Stelian & Andrei Grigor] @ 2021</p>
 </footer>
+</div>
 </main>
 
 </body>
-<script src="scripts/transitionToPage.js"></script>
-<script src="scripts/generateCountryGraph.js"></script>
+<script src="scripts/generateRadarChart.js"></script>
+<script src="scripts/generateBarChart.js"></script>
 </html>
