@@ -1,12 +1,12 @@
 //DECLARE ARRAYS
 let allCountry = [],
   allHDI = [],
-  allInflation = [],
+  allExports = [],
   allAGS = [],
   allGDP = [],
   allPerCapita = [],
   allGINI = [],
-  allUnemployment = [],
+  allDebt = [],
   allANS = [];
 
 async function fetchAll() {
@@ -25,12 +25,12 @@ async function fetchNow() {
   await fetchAll();
   for (let i = 0; i < allCountry.length; i++) {
     allHDI.push(allCountry[i]["HDI"]);
-    allInflation.push(allCountry[i]["Inflation"]);
+    allExports.push(allCountry[i]["Exports"]);
     allAGS.push(allCountry[i]["Average Gross Salary"]);
     allGDP.push(allCountry[i]["GDP (PPP)"]);
     allPerCapita.push(allCountry[i]["Per Capita (PPP)"]);
     allGINI.push(allCountry[i]["GINI"]);
-    allUnemployment.push(allCountry[i]["Unemployment"]);
+    allDebt.push(allCountry[i]["External Debt"]);
     allANS.push(allCountry[i]["Average Net Salary"]);
   }
 }
@@ -89,12 +89,12 @@ async function generateRadarChart() {
   const data = {
     labels: [
       "HDI",
-      "Inflation",
+      "Exports",
       "Average Gross Salary",
       "GDP",
       "GDP per Capita",
       "GINI",
-      "Unemployment",
+      "External Debt",
       "Average Net Salary",
     ],
     datasets: [
@@ -109,11 +109,7 @@ async function generateRadarChart() {
         pointHoverBorderColor: "rgb(255, 99, 132)",
         data: [
           percentile(allHDI, allHDI.length, firstCountry["HDI"]),
-          percentile(
-            allInflation,
-            allInflation.length,
-            firstCountry["Inflation"]
-          ),
+          percentile(allExports, allExports.length, firstCountry["Exports"]),
           percentile(
             allAGS,
             allAGS.length,
@@ -126,11 +122,7 @@ async function generateRadarChart() {
             firstCountry["Per Capita (PPP)"]
           ),
           percentile(allGINI, allGINI.length, firstCountry["GINI"]),
-          percentile(
-            allUnemployment,
-            allUnemployment.length,
-            firstCountry["Unemployment"]
-          ),
+          percentile(allDebt, allDebt.length, firstCountry["External Debt"]),
           percentile(allANS, allANS.length, firstCountry["Average Net Salary"]),
         ],
       },
@@ -145,11 +137,7 @@ async function generateRadarChart() {
         pointHoverBorderColor: "rgb(54, 162, 235)",
         data: [
           percentile(allHDI, allHDI.length, secondCountry["HDI"]),
-          percentile(
-            allInflation,
-            allInflation.length,
-            secondCountry["Inflation"]
-          ),
+          percentile(allExports, allExports.length, secondCountry["Exports"]),
           percentile(
             allAGS,
             allAGS.length,
@@ -162,11 +150,7 @@ async function generateRadarChart() {
             secondCountry["Per Capita (PPP)"]
           ),
           percentile(allGINI, allGINI.length, secondCountry["GINI"]),
-          percentile(
-            allUnemployment,
-            allUnemployment.length,
-            secondCountry["Unemployment"]
-          ),
+          percentile(allDebt, allDebt.length, secondCountry["External Debt"]),
           percentile(
             allANS,
             allANS.length,

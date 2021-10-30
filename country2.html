@@ -61,8 +61,8 @@
 
         <h2>Select second country</h2>
         <select name="country2" id="country2">
-            <option value="Germany" selected>Germany</option>
-            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="France" selected>France</option>
             <option value="Italy">Italy</option>
             <option value="Spain">Spain</option>
             <option value="Netherlands">Netherlands</option>
@@ -95,21 +95,35 @@
     <div style = "width: 27.5vw">
         <canvas id="radarChart"></canvas>
       </div>
-      <p onclick="nextComparison(); generateBarChart()" class="arrow">🢂</p>
+      <p onclick="nextComparison(); generateBarChart(); generatePolarAreaChart(); generateDoughnutChart()" class="arrow">🢂</p>
     </div>
     </div>
 
     <div class="secondComparison">
         <div class="flexRow">
             <p onclick="prevComparison()" class="arrow">🢀</p>
-            <div class="flexColumn">
-            <h2>Largest economies of the EU</h2>
+
+        <div class="flexColumn">
+            <h2>Highest-paid folk in the EU (Monthly $)</h2>
+            <div style = "width: 25vw; height: 30vh; margin-bottom: 20.9vh">
+                <canvas id="polarAreaChart"></canvas>
+                </div>
+            </div>
+
+        <div class="flexColumn">
+            <h2>Largest economies of the EU (Trillion $)</h2>
             <div style = "width: 25vw; height: 30vh">
                 <canvas id="barChart"></canvas>
-              </div>
+                </div>
             </div>
-            <h2>Highest-paid folk in the EU</h2>
-            <h2>Most developed places in the EU</h2>
+
+        <div class="flexColumn">
+            <h2>Biggest exports in the EU (Trillion $)</h2>
+            <div style = "width: 25vw; height: 30vh; margin-bottom: 20.9vh">
+                <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+
             <p onclick="nextComparison()" class="arrow">🢂</p>
         </div>
         </div>
@@ -126,4 +140,6 @@
 </body>
 <script src="scripts/generateRadarChart.js"></script>
 <script src="scripts/generateBarChart.js"></script>
+<script src="scripts/generatePolarAreaChart.js"></script>
+<script src="scripts/generateDoughnutChart.js"></script>
 </html>
