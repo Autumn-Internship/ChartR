@@ -4,7 +4,7 @@ let countries = [];
 
 async function fetchIt() {
   try {
-    const response = await fetch("http://localhost:3000/countries");
+    const response = await fetch("https://chart-r.herokuapp.com/countries");
     const data = await response.json();
     countries = data;
   } catch (err) {
