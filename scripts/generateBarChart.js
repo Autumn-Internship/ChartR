@@ -1,6 +1,8 @@
 function generateBarChart() {
   let labels = [];
-  let sortedGDP = allGDP.sort();
+  let sortedGDP = allGDP.sort(function (a, b) {
+    return a - b;
+  });
   let highestGDPs = sortedGDP.slice(sortedGDP.length - 5, sortedGDP.length);
   for (i = 0; i < allCountry.length; i++)
     for (j = 0; j < highestGDPs.length; j++)

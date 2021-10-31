@@ -12,7 +12,7 @@ let allCountry = [],
 async function fetchAll() {
   //FETCHING ALL DATA AND ADDING IT INTO THE ALLCOUNTRY ARRAY
   try {
-    const response = await fetch("http://localhost:3000/countriesData");
+    const response = await fetch("https://chart-r.herokuapp.com/countriesData");
     const data = await response.json();
     allCountry = data;
   } catch (err) {
@@ -63,7 +63,7 @@ async function fetchIt() {
     let select = document.getElementById("country1");
     const callCountry1 = select.options[select.selectedIndex].text;
     let response = await fetch(
-      `http://localhost:3000/countriesData/${callCountry1}`
+      `https://chart-r.herokuapp.com/countriesData/${callCountry1}`
     );
     let data = await response.json();
     firstCountry = data;
@@ -71,7 +71,7 @@ async function fetchIt() {
     select = document.getElementById("country2");
     const callCountry2 = select.options[select.selectedIndex].text;
     response = await fetch(
-      `http://localhost:3000/countriesData/${callCountry2}`
+      `https://chart-r.herokuapp.com/countriesData/${callCountry2}`
     );
     data = await response.json();
     secondCountry = data;

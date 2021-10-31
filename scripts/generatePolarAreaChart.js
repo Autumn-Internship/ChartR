@@ -1,6 +1,9 @@
 function generatePolarAreaChart() {
   let labels = [];
-  let sortedANS = allANS.sort();
+  let sortedANS = allANS.sort(function (a, b) {
+    return a - b;
+  });
+  console.log(sortedANS);
   let highestANS = sortedANS.slice(sortedANS.length - 5, sortedANS.length);
   for (i = 0; i < allCountry.length; i++)
     for (j = 0; j < highestANS.length; j++)

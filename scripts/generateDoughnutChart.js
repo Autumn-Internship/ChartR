@@ -1,6 +1,8 @@
 function generateDoughnutChart() {
   let labels = [];
-  let sortedExports = allExports.sort();
+  let sortedExports = allExports.sort(function (a, b) {
+    return a - b;
+  });
   let highestExports = sortedExports.slice(
     sortedExports.length - 5,
     sortedExports.length
