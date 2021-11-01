@@ -58,7 +58,7 @@ async function getData(){
     high2=[];
     //set1
     if(compared1!=""){
-        await fetch(`https://fcsapi.com/api-v3/forex/history?id=${compared1}&period=1h&access_key=${API_KEY}`)
+        await fetch(`https://fcsapi.com/api-v3/forex/history?id=${compared1}&period=month&access_key=${API_KEY}`)
         .then(res => res.json())
         .then(data => {
             data1= data['response'];
@@ -75,7 +75,7 @@ async function getData(){
 
     //set2
     if(compared2!=""){
-        await fetch(`https://fcsapi.com/api-v3/forex/history?id=${compared2}&period=1h&access_key=${API_KEY}`)
+        await fetch(`https://fcsapi.com/api-v3/forex/history?id=${compared2}&period=month&access_key=${API_KEY}`)
         .then(res => res.json())
         .then(data => {
             data2= data['response'];
