@@ -23,6 +23,7 @@
         <span onclick="transitionToPage('')" class="crypto">Crypto2</span>
     </header>
     
+   <section class="topOfCmp">
     <form id="cmpForm" action="">
         <h1>Slect two currencies to compare</h1>
         <select name="cmp1" id="cmp1">
@@ -49,6 +50,12 @@
         </select>
         <button id="plotBtn" onclick="getData()" type="button">Search</button>
     </form>
+    
+    <div class="currentValuesChart">
+        <canvas id="currentCmpChart" width="750" height="200vh"></canvas>
+    </div>
+
+   </section>
     <div id="graphDiv">
         <canvas id="CmpChart" width="225" height="75vh"></canvas>
     </div>

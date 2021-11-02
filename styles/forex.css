@@ -64,3 +64,10 @@ select {
 #graphDiv{
     max-height: 75vh;
 }
+
+.topOfCmp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+

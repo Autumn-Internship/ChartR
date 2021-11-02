@@ -10,10 +10,15 @@ let compared2;
 let lbl1, lbl2;
 let data1;
 let data2;
+let currentData;
 let high1=[];
 let high2=[];
+let currentHigh=[];
 let myChart;
+let currentValuesChart;
 let min=[], max=[];
+
+
 
 for(i=0; i<300;i++){
     dummy[i]='';
@@ -25,6 +30,67 @@ function getCMP(){
     compared1 = cmp1.value;
     compared2 = cmp2.value;
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    plotCurrent();
+});
+
+async function plotCurrent(){
+        await fetch(`https://fcsapi.com/api-v3/forex/latest?id=629,659,645,9,661,704,707,68&access_key=${API_KEY}`)
+        .then(res => res.json())
+        .then(data => {
+            currentData= data['response'];
+        })
+        .catch(err => console.log(err));
+
+        for(const [key, value] of Object.entries(currentData)){
+            currentHigh= [...currentHigh, parseFloat(value.h)];
+            // currencies in order: DKK(danish krone), SEK(sweedish krona), BGN(bulgarian lev), CZK(czech krouna), HRK(croatian kuna), HUF(hungarian forint), PLN(polish zolty), RON(romanian leu)
+        }
+    drawPlot();
+}
+
+function drawPlot(){
+    if(currentValuesChart != undefined) currentValuesChart.destroy();
+    curChart = document.getElementById('currentCmpChart');
+    currentValuesChart = new Chart(curChart,{
+        type: 'bar',
+        data: {
+            labels: ['DKK','SEK','BGN', 'CZK', 'HRK', 'PLN', 'RON'],
+            datasets: [{
+                label: 'Values in comparison to Euro',
+                data: [currentHigh[0],currentHigh[1],currentHigh[2],currentHigh[3],currentHigh[4],currentHigh[6],currentHigh[7],],
+                borderWidth: 1,
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.5)',
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(153, 102, 255, 0.7)',
+                    'rgba(255, 159, 64, 0.7)',
+                    'rgba(255,243,194, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(255,243,194, 1)'
+                ],
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+}
+
 
 function getLabels(){
     switch(compared1){
