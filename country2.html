@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles/general.css">
+<link rel="stylesheet" type="text/css" href="styles/country2.css">
+<title> ChartR </title>
+<meta charset="utf-8"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts/transitionToPage.js"></script>
+<script src="scripts/transitionToComparison.js"></script>
+</head>
+
+<body>
+    
+<main class="outerContainer">
+    <header>
+        <span onclick="transitionToPage('home.html')" class="home">Home</span>
+        <span onclick="transitionToPage('country1.html')" class="countries">Country1</span>
+        <span onclick="transitionToPage('country2.html')" class="countries">Country2</span>
+        <span onclick="transitionToPage('')" class="stock">Stock1</span>
+        <span onclick="transitionToPage('')" class="stock">Stock2</span>
+        <span onclick="transitionToPage('')" class="crypto">Crypto1</span>
+        <span onclick="transitionToPage('')" class="crypto">Crypto2</span>
+    </header>
+
+    <div class="firstComparison">
+    <div class="flexRow">
+        <p onclick="prevComparison()" class="arrow">🢀</p>
+    <div class="flexColumn">
+        <h2>Select first country</h2>
+        <select name="country1" id="country1">
+            <option value="Germany" selected>Germany</option>
+            <option value="France">France</option>
+            <option value="Italy">Italy</option>
+            <option value="Spain">Spain</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Poland">Poland</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Austria">Austria</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Finland">Finland</option>
+            <option value="CzechRepublic">Czech Republic</option>
+            <option value="Romania">Romania</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Greece">Greece</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Slovakia">Slovakia</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Slovenia">Slovenia</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Malta">Malta</option>
+        </select>
+
+
+        <h2>Select second country</h2>
+        <select name="country2" id="country2">
+            <option value="Germany">Germany</option>
+            <option value="France" selected>France</option>
+            <option value="Italy">Italy</option>
+            <option value="Spain">Spain</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Poland">Poland</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Austria">Austria</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Finland">Finland</option>
+            <option value="CzechRepublic">Czech Republic</option>
+            <option value="Romania">Romania</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Greece">Greece</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Slovakia">Slovakia</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Slovenia">Slovenia</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Cyprus">Cyprus</option>
+            <option value="Malta">Malta</option>
+        </select>
+    </form>
+    <button id="compareButton" onclick="generateRadarChart()">GENERATE</button>
+    </div>
+    <div style = "width: 27.5vw">
+        <canvas id="radarChart"></canvas>
+      </div>
+      <p onclick="nextComparison(); generateBarChart(); generatePolarAreaChart(); generateDoughnutChart()" class="arrow">🢂</p>
+    </div>
+    </div>
+
+    <div class="secondComparison">
+        <div class="flexRow">
+            <p onclick="prevComparison()" class="arrow">🢀</p>
+
+        <div class="flexColumn">
+            <h2>Highest-paid folk in the EU (Monthly $)</h2>
+            <div style = "width: 25vw; height: 30vh; margin-bottom: 20.9vh">
+                <canvas id="polarAreaChart"></canvas>
+                </div>
+            </div>
+
+        <div class="flexColumn">
+            <h2>Largest economies of the EU (Trillion $)</h2>
+            <div style = "width: 25vw; height: 30vh">
+                <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+        <div class="flexColumn">
+            <h2>Biggest exports in the EU (Trillion $)</h2>
+            <div style = "width: 25vw; height: 30vh; margin-bottom: 20.9vh">
+                <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+
+            <p onclick="nextComparison()" class="arrow">🢂</p>
+        </div>
+        </div>
+
+
+
+
+<footer>
+    <p> ChartR team [Sale Razvan-Stelian & Andrei Grigor] @ 2021</p>
+</footer>
+</div>
+</main>
+
+</body>
+<script src="scripts/generateRadarChart.js"></script>
+<script src="scripts/generateBarChart.js"></script>
+<script src="scripts/generatePolarAreaChart.js"></script>
+<script src="scripts/generateDoughnutChart.js"></script>
+</html>
