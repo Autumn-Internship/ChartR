@@ -13,7 +13,8 @@ The primary topics we are interested in covering macroeconomic data, currencies,
   2) Available comparisons via Radar chart for multiple indices for union states
   3) Bar, Pie/Doughnut and Polar Area charts - displaying general info
   4) Developing a page dedicated to EU currencies - their exchange rate, location, and more
-  5) 
+  5) Explaining the used macroeconomic indicators in a specialized page
+  6) Mapping the bigger european cities on an interactive map
 
 ## Timeline ##
 
