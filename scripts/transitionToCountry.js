@@ -2,15 +2,15 @@ let index = 0;
 let dummy = 0;
 let countries = [];
 
-async function fetchIt() {
-  try {
-    const response = await fetch("http://localhost:3000/countries");
-    const data = await response.json();
-    countries = data;
-  } catch (err) {
-    alert("Server connection failed");
-  }
-}
+// async function fetchIt() {
+//   try {
+//     const response = await fetch("http://localhost:3000/countries");
+//     const data = await response.json();
+//     countries = data;
+//   } catch (err) {
+//     alert("Server connection failed");
+//   }
+// }
 
 window.addEventListener("DOMContentLoaded", () => {
   fetchIt();
