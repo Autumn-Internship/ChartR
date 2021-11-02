@@ -18,24 +18,24 @@ The primary topics we are interested in covering macroeconomic data, currencies,
 ## Timeline ##
 
   #### [Week 1] ####
-  - Setup a JSON-Server for testing purposes; ✓
-  - Designing the general UI; ✓
-  - Drawing general scheme of the project, understanding API endpoints; ✓
-  - Optional: cover at least one presented topic; ✓
+  - Setup a JSON-Server for testing purposes ✓
+  - Designing the general UI ✓
+  - Drawing general scheme of the project, understanding API endpoints ✓
+  - Optional: cover at least one presented topic ✓
 
   #### [Week 2] ####
-  - Cover and finish the first two tabs (Country data & currency); ✓
+  - Cover and finish the first two tabs (Country data & currency) ✓
   - Stuff to implement: 
-    - Populate the JSON-server with ready-to-use data; ✓
-    - Capture and manipulate data from the server/API - (https://fcsapi.com/ - Documentation); ✓
-    - Country data comparison using Radar, Bar, and other interactive charts; ✓
-    - Country currencies visualization; ✓
-    - Basic animations for every page; ✓
-  - Optional: move the DB to Heroku; ✓
+    - Populate the JSON-server with ready-to-use data ✓
+    - Capture and manipulate data from the server/API - (https://fcsapi.com/ - Documentation) ✓
+    - Country data comparison using Radar, Bar, and other interactive charts ✓
+    - Country currencies visualization ✓
+    - Basic animations for every page ✓
+  - Optional: move the DB to Heroku ✓
 
   #### [Week 3] ####
-  - Merge the branches created thus far; ✓
-  - Explanation of core macroeconomic concepts with interactive maps as an aid;
-  - The making of a new endpoint for biggest european cities;
-  - Mapping of said european cities with their particular data on a map using Google's GeoChart - (https://developers.google.com/chart/interactive/docs/gallery/geochart - Documentation) ;
-  - Optional: Start working on responsive design;
+  - Merge the branches created thus far ✓
+  - Explanation of core macroeconomic concepts with interactive maps as an aid
+  - The making of a new endpoint for biggest european cities
+  - Mapping of said european cities with their particular data on a map using Google's GeoChart - (https://developers.google.com/chart/interactive/docs/gallery/geochart - Documentation)
+  - Optional: Start working on responsive design
