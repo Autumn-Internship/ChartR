@@ -1,6 +1,5 @@
-<h1 align=center> ChartR </h1>
-<h2 align=center> Sale Razvan & Andrei Grigor </h2>
-<h2 align=center><img src="imagini/homeWallpaper.png" height="75" width="125"></h2>
+
+
 
 <p align=center><a href="https://salerazvan.github.io/home">Link</a></p>
 
