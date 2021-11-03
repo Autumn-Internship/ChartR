@@ -1,0 +1,57 @@
+:root {
+  --usedFont: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.outerContainer {
+  margin: 4.5% auto;
+}
+
+.flexRow {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flexText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30vw;
+}
+
+.flexMap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45vw;
+}
+
+h2 {
+  font-family: var(--usedFont);
+  font-size: 2.5vh;
+  font-weight: bold;
+  text-align: center;
+  color: firebrick;
+}
+
+h3 {
+  font-family: var(--usedFont);
+  font-size: 1.75vh;
+  font-weight: bold;
+  text-align: center;
+  color: firebrick;
+}
+
+p {
+  font-family: var(--usedFont);
+  font-weight: bold;
+  font-size: 1.4vh;
+  text-align: center;
+}
+
+#citiesDiv:hover {
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}

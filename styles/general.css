@@ -16,7 +16,7 @@ body {
   background-size: cover;
   outline: 0.25vh solid black;
   width: 85%;
-  margin: 3.5% auto;
+  margin: 5.5% auto;
   opacity: 0.92;
   border-radius: 2.5%;
 }
@@ -42,19 +42,25 @@ header span:hover {
   transition: 0.5s;
 }
 
-.countries {
+.home {
+  color: darkslateblue;
+}
+
+.explore,
+.compare {
   color: royalblue;
 }
 
-.stock {
+.metro,
+.currency {
   color: #058ed9;
 }
 
-.crypto {
+.thirdColor {
   color: #715aff;
 }
 
-.home {
+.active {
   color: #a3333d;
 }
 
