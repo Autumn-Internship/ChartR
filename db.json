@@ -896,157 +896,157 @@
     "citiesData": [
         {
              "id": "Munich",
-             "Population": 5991144,
-             "GMP": 194.9
+             "GMP": 194.9,
+             "Population": 5991144
         },
         {
              "id": "Berlin",
-             "Population": 6004857,
-             "GMP": 193.3
+             "GMP": 193.3,
+             "Population": 6004857
         },
         {
              "id": "Ruhr",
-             "Population": 5118681,
-             "GMP": 168.4
+             "GMP": 168.4,
+             "Population": 5118681
         },
         {
              "id": "Stuttgart Region",
-             "Population": 2735425,
-             "GMP": 155.7
+             "GMP": 155.7,
+             "Population": 2735425
         },
         {
              "id": "Frankfurt/Rhine-Main",
-             "Population": 5808518,
-             "GMP": 152.2
+             "GMP": 152.2,
+             "Population": 5808518
         },
         {
              "id": "Paris metropolitan area",
-             "Population": 12628266,
-             "GMP": 742
+             "GMP": 742,
+             "Population": 12628266
         },
         {
             "id": "Marseille metropolitan area",
-            "Population": 1760653,
-            "GMP": 101.2
+            "GMP": 101.2,
+            "Population": 1760653
        },
        {
             "id": "Lyon metropolitan area",
-            "Population": 2323221,
-            "GMP": 89.5
+            "GMP": 89.5,
+            "Population": 2323221
         },
         {
             "id": "Madrid metropolitan area",
-            "Population": 6321398,
-            "GMP": 231.1
+            "GMP": 231.1,
+            "Population": 6321398
         },
         {
             "id": "Barcelona metropolitan area",
-            "Population": 5355127,
-            "GMP": 171.4
+            "GMP": 171.4,
+            "Population": 5355127
         },
         {
             "id": "Valencia metropolitan area",
-            "Population": 2522383,
-            "GMP": 59.1
+            "GMP": 59.1,
+            "Population": 2522383
         },
         {
             "id": "Milan metropolitan area",
-            "Population": 8220170,
-            "GMP": 213.8
+            "GMP": 213.8,
+            "Population": 8220170
         },
         {
             "id": "Rome metropolitan area",
-            "Population": 4353738,
-            "GMP": 165.3
+            "GMP": 165.3,
+            "Population": 4353738
         },
         {
             "id": "Turin metropolitan area",
-            "Population": 1646064,
-            "GMP": 75.7
+            "GMP": 75.7,
+            "Population": 1646064
         },
         {
             "id": "Amsterdam metropolitan area",
-            "Population": 2480394,
-            "GMP": 182.7
+            "GMP": 182.7,
+            "Population": 2480394
         },
         {
             "id": "Rotterdam-The Hague metropolitan area",
-            "Population": 2563197,
-            "GMP": 84.9
+            "GMP": 84.9,
+            "Population": 2563197
         },
         {
             "id": "Dublin metropolitan area",
-            "Population": 1904806,
-            "GMP": 171.4
+            "GMP": 171.4,
+            "Population": 1904806
         },
         {
             "id": "Stockholm metropolitan area",
-            "Population": 2205105,
-            "GMP": 147.8
+            "GMP": 147.8,
+            "Population": 2205105
         },
         {
             "id": "Gothenburg metropolitan area",
-            "Population": 1025355,
-            "GMP": 79.2
+            "GMP": 79.2,
+            "Population": 1025355
         },
         {
             "id": "Malmö metropolitan area",
-            "Population": 733037,
-            "GMP": 54
+            "GMP": 54,
+            "Population": 733037
         },
         {
             "id": "Brussels Capital Region",
-            "Population": 2500000,
-            "GMP": 147.7
+            "GMP": 147.7,
+            "Population": 2500000
         },
         {
             "id": "Antwerp metropolitan area",
-            "Population": 1200000,
-            "GMP": 53.6
+            "GMP": 53.6,
+            "Population": 1200000
         },
         {
             "id": "Greater Copenhagen",
-            "Population": 2699551,
-            "GMP": 134.9
+            "GMP": 134.9,
+            "Population": 2699551
         },
         {
             "id": "Vienna metropolitan area",
-            "Population": 2600000,
-            "GMP": 132.2
+            "GMP": 132.2,
+            "Population": 2600000
         },
         {
             "id": "Greater Helsinki",
-            "Population": 1526694,
-            "GMP": 91.7
+            "GMP": 91.7,
+            "Population": 1526694
         },
         {
             "id": "Warsaw metropolitan area",
-            "Population": 3053104,
-            "GMP": 86.3
+            "GMP": 86.3,
+            "Population": 3053104
         },
         {
             "id": "Athens metropolitan area",
-            "Population": 3753783,
-            "GMP": 81.9
+            "GMP": 81.9,
+            "Population": 3753783
         },
         {
             "id": "Prague metropolitan area",
-            "Population": 2709418,
-            "GMP": 81.6
+            "GMP": 81.6,
+            "Population": 2709418
         },
         {
             "id": "Lisbon metropolitan area",
-            "Population": 2884297,
-            "GMP": 73.6
+            "GMP": 73.6,
+            "Population": 2884297
         },
         {
             "id": "Budapest metropolitan area",
-            "Population": 3303786,
-            "GMP": 69.4
+            "GMP": 69.4,
+            "Population": 3303786
         },
         {
             "id": "Bucharest metropolitan area",
-            "Population": 2272163,
-            "GMP": 55.2
+            "GMP": 55.2,
+            "Population": 2272163
         }
     ]}

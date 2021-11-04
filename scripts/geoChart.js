@@ -14,14 +14,9 @@ async function fetchAll() {
 }
 
 function parseCities() {
-  for (let i = 0; i < allCities.length; i++) {
-    drawCityArray.push([
-      allCities[i]["id"],
-      allCities[i]["GMP"],
-      allCities[i]["Population"],
-    ]);
-  }
-  console.log(drawCityArray);
+  allCities.reduce((allCities, elem) => {
+    drawCityArray.push(Object.values(elem));
+  }, []);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
