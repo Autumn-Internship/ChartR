@@ -1,6 +1,3 @@
-
-
-
 <p align=center><a href="https://salerazvan.github.io/home">Link</a></p>
 
 ## High-level overview ## 
