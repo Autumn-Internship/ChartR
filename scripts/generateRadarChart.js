@@ -16,7 +16,7 @@ async function fetchAll() {
     const data = await response.json();
     allCountry = data;
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 
@@ -76,7 +76,7 @@ async function fetchIt() {
     data = await response.json();
     secondCountry = data;
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 

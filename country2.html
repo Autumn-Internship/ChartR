@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="styles/general.css">
 <link rel="stylesheet" type="text/css" href="styles/country2.css">
 <title> ChartR </title>
-<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="scripts/transitionToPage.js"></script>
 <script src="scripts/generalTransition.js"></script>
@@ -92,7 +92,7 @@
     </form>
     <button id="compareButton" onclick="generateRadarChart()">GENERATE</button>
     </div>
-    <div style = "width: 27.5vw">
+    <div class="radarChart">
         <canvas id="radarChart"></canvas>
       </div>
       <p onclick="next('firstComparison', 'secondComparison'); generateBarChart(); generatePolarAreaChart(); generateDoughnutChart()" 
@@ -143,4 +143,5 @@
 <script src="scripts/generateBarChart.js"></script>
 <script src="scripts/generatePolarAreaChart.js"></script>
 <script src="scripts/generateDoughnutChart.js"></script>
+<script>markActive("compare");</script>
 </html>

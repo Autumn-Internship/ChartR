@@ -8,7 +8,7 @@ async function fetchGDP() {
     parseGDP(allCountries);
     drawGDPMap();
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 
