@@ -75,3 +75,8 @@ h2 {
   color: #ad0b2e;
   transition: 0.5s;
 }
+
+.secondComparison {
+  opacity: 0;
+  display: none;
+}

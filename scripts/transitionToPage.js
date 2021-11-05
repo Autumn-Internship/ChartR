@@ -1,7 +1,7 @@
-function memorize(current, next) {
-  localStorage.setItem("current", current);
-  localStorage.setItem("next", next);
-}
+// function memorize(current, next) {
+//   localStorage.setItem("current", current);
+//   localStorage.setItem("next", next);
+// }
 
 function transitionToPage(href) {
   document.querySelector("body").style.opacity = 0;

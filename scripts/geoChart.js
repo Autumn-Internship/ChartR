@@ -1,4 +1,3 @@
-var allCities = [];
 let drawCityArray = [["City", "GMP", "Population"]];
 
 async function fetchAll() {
@@ -6,17 +5,18 @@ async function fetchAll() {
     const response = await fetch("https://chart-r.herokuapp.com/citiesData");
     const data = await response.json();
     allCities = data;
-    parseCities();
+    parseCities(allCities);
     drawMarkersMap();
   } catch (err) {
     alert("Server connection failed");
   }
 }
 
-function parseCities() {
-  allCities.reduce((allCities, elem) => {
+function parseCities(arr) {
+  arr.reduce((drawCityArray, elem) => {
     drawCityArray.push(Object.values(elem));
-  }, []);
+    return drawCityArray;
+  }, drawCityArray);
 }
 
 window.addEventListener("DOMContentLoaded", () => {

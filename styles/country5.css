@@ -4,7 +4,7 @@
 }
 
 .outerContainer {
-  margin: 4.5% auto;
+  margin: 5.5% auto;
 }
 
 .flexRow {
@@ -14,6 +14,12 @@
   justify-content: space-evenly;
 }
 
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .flexText {
   display: flex;
   flex-direction: column;
@@ -21,19 +27,31 @@
   width: 30vw;
 }
 
+h2 {
+  font-family: var(--usedFont);
+  font-size: 2vh;
+  font-weight: bold;
+  color: firebrick;
+  text-align: center;
+}
+
+.arrow {
+  font-size: 4.5vh;
+  color: #d03711;
+  align-self: center;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transform: scale(1.25);
+  color: #ad0b2e;
+  transition: 0.5s;
+}
+
 .flexMap {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45vw;
-}
-
-h2 {
-  font-family: var(--usedFont);
-  font-size: 2.5vh;
-  font-weight: bold;
-  text-align: center;
-  color: firebrick;
 }
 
 h3 {
@@ -51,7 +69,13 @@ p {
   text-align: justify;
 }
 
-#citiesDiv:hover {
+#learnGINI:hover,
+#learnGDP:hover {
   box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
   transition: 0.5s;
+}
+
+.GDP {
+  opacity: 0;
+  display: none;
 }

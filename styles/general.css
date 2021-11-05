@@ -46,17 +46,18 @@ header span:hover {
   color: darkslateblue;
 }
 
-.explore,
-.compare {
+.learn,
+.explore {
   color: royalblue;
 }
 
-.metro,
+.compare,
 .currency {
   color: #058ed9;
 }
 
-.thirdColor {
+.metro,
+.tba {
   color: #715aff;
 }
 
