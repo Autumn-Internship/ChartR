@@ -33,9 +33,9 @@ The primary topics we are interested in covering macroeconomic data, currencies,
 
   #### [Week 3] ####
   - Merge the branches created thus far ✓
-  - Explanation of core macroeconomic concepts with interactive maps as an aid
-  - The making of a new endpoint for biggest european cities
-  - Mapping of said european cities with their particular data on a map using Google's GeoChart - (https://developers.google.com/chart/interactive/docs/gallery/geochart - Documentation)
+  - Explanation of core macroeconomic concepts with interactive maps as an aid ✓
+  - The making of a new endpoint for biggest european cities ✓
+  - Mapping of said european cities with their particular data on a map using Google's GeoChart - (https://developers.google.com/chart/interactive/docs/gallery/geochart - Documentation) ✓
   - Optional: Start working on responsive design
 
 #### [Week 4] ####
