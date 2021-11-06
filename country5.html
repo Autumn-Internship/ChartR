@@ -10,6 +10,8 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="scripts/learnGINI.js"></script>
 <script src="scripts/learnGDP.js"></script>
+<script src="scripts/learnHDI.js"></script>
+<script src="scripts/learnUNEMP.js"></script>
 </head>
 
 <body>
@@ -67,10 +69,55 @@
            <div id="learnGDP"></div>
         </div>    
     </div>
-        <p class="arrow">🢂</p>
+        <p onclick="next('GDP', 'HDI'); fetchHDI()" class="arrow">🢂</p>
     </div>
     </div>
 <!-- end of section (shows on the entire page) -->
+<div class="HDI">
+    <div class="flexRow">
+        <p onclick="prev('HDI', 'GDP')" class="arrow">🢀</p>
+    <div class="flexText">
+        <h2>HDI</h2>
+        <h3>What is HDI?</h3>
+        <p>HDI (Human Development Index) was created to emphasize that people and their capabilities should be the ultimate criteria for assessing the development of a country, not economic growth alone.</p>
+        <h3>What does HDI actually mean</h3>
+        <p>A country scores a higher HDI when the lifespan is higher, the education level is higher, and the gross national income GNI (PPP) per capita is higher.</p>
+        <h3>Limitations</h3>
+        <p>The index does not take into account several factors, such as the net wealth per capita or the relative quality of goods in a country. This situation tends to lower the ranking for some of the most advanced countries.</p>
+    </div>
+
+    <div class="flexColumn">
+        <div class="flexMap">
+            <h3>HDI map of EU</h3>
+           <div id="learnHDI"></div>
+        </div>    
+    </div>
+        <p onclick="next('HDI', 'UNEMP');" class="arrow">🢂</p>
+    </div>
+</div>
+
+<div class="UNEMP">
+    <div class="flexRow">
+        <p onclick="prev('UNEMP', 'HDI')" class="arrow">🢀</p>
+    <div class="flexText">
+        <h2>Unemployment</h2>
+        <h3>What is unemployment?</h3>
+        <p>Unemployment, according to the OECD, is people above a specified age (usually 15) not being in paid employment or self-employment but currently available for work during the reference period.</p>
+        <h3>How do we interpret this value?</h3>
+        <p>Unemployment is measured by the unemployment rate, which is the number of people who are unemployed as a percentage of the labour force (the total number of people employed added to those unemployed).</p>
+        <h3>Limitations</h3>
+        <p>Because of the difficulty in measuring the unemployment rate by, for example, using surveys or through registered unemployed citizens , statistical figures such as the employment-to-population ratio might be more suitable for evaluating the status of the workforce and the economy if they were based on people who are registered</p>
+    </div>
+
+    <div class="flexColumn">
+        <div class="flexMap">
+            <h3>Unemployment map of EU</h3>
+           <div id="learnUNEMP"></div>
+        </div>    
+    </div>
+        <p class="arrow">🢂</p>
+    </div>
+</div>
 
 <footer>
 <p> ChartR team [Sale Razvan-Stelian & Andrei Grigor] @ 2021</p>

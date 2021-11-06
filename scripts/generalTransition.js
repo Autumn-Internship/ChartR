@@ -1,7 +1,7 @@
 let index = 0;
 
 function next(current, next) {
-  if (index < 2) {
+  if (index < 4) {
     index++;
 
     document.querySelector(`.${current}`).style.opacity = 0;
