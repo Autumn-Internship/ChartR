@@ -103,42 +103,66 @@ function drawPlot() {
 }
 
 function getLabels() {
-  switch (compared1) {
-    case "629":
-      lbl1 = "Bulgarian lev";
-    case "659":
-      lbl1 = "Croation Kuna";
-    case "645":
-      lbl1 = "Check Krouna";
-    case "9":
-      lbl1 = "Danish Krone";
-    case "661":
-      lbl1 = "Hungarian Forint";
-    case "704":
-      lbl1 = "Polish Zolty";
-    case "707":
-      lbl1 = "Romanian Ley";
-    case "68":
-      lbl1 = "Sweedish Krona";
-  }
-  switch (compared2) {
-    case "629":
-      lbl2 = "Bulgarian lev";
-    case "659":
-      lbl2 = "Croation Kuna";
-    case "645":
-      lbl2 = "Check Krouna";
-    case "9":
-      lbl2 = "Danish Krone";
-    case "661":
-      lbl2 = "Hungarian Forint";
-    case "704":
-      lbl2 = "Polish Zolty";
-    case "707":
-      lbl2 = "Romanian Ley";
-    case "68":
-      lbl2 = "Sweedish Krona";
-  }
+
+  if(compared1 == '629') lbl1='Bulgarian Lev'
+  else if(compared1 == '659') lbl1 = "Croation Kuna";
+  else if(compared1 == '645') lbl1 = "Czech Krouna";
+  else if(compared1 == '9') lbl1 = "Danish Krone";
+  else if(compared1 == '661') lbl1 = "Hungarian Forint";
+  else if(compared1 == '704') lbl1 = "Polish Zolty";
+  else if(compared1 == '707') lbl1 = "Romanian Leu";
+  else if(compared1 == '68') lbl1 = "Sweedish Krona";
+
+  if(compared2 == '629') lbl2='Bulgarian Lev'
+  else if(compared2 == '659') lbl2 = "Croation Kuna";
+  else if(compared2 == '645') lbl2 = "Czech Krouna";
+  else if(compared2 == '9') lbl2 = "Danish Krone";
+  else if(compared2 == '661') lbl2 = "Hungarian Forint";
+  else if(compared2 == '704') lbl2 = "Polish Zolty";
+  else if(compared2 == '707') lbl2 = "Romanian Leu";
+  else if(compared2 == '68') lbl2 = "Sweedish Krona";
+  
+
+  // switch (compared1) {
+  //   case "629":
+  //     lbl1 = "Bulgarian lev";
+  //   case "659":
+  //     lbl1 = "Croation Kuna";
+  //   case "645":
+  //     lbl1 = "Check Krouna";
+  //   case "9":
+  //     lbl1 = "Danish Krone";
+  //   case "661":
+  //     lbl1 = "Hungarian Forint";
+  //   case "704":
+  //     lbl1 = "Polish Zolty";
+  //   case "707":
+  //     lbl1 = "Romanian Ley";
+  //   case "68":
+  //     lbl1 = "Sweedish Krona";
+  //   default:
+  //      lbl2 = "#"
+  // }
+  // switch (compared2) {
+  //   case "629":
+  //     lbl2 = "Bulgarian lev";
+  //   case "659":
+  //     lbl2 = "Croation Kuna";
+  //   case "645":
+  //     lbl2 = "Check Krouna";
+  //   case "9":
+  //     lbl2 = "Danish Krone";
+  //   case "661":
+  //     lbl2 = "Hungarian Forint";
+  //   case "704":
+  //     lbl2 = "Polish Zolty";
+  //   case "707":
+  //     lbl2 = "Romanian Ley";
+  //   case "68":
+  //     lbl2 = "Sweedish Krona";
+  //   default:
+  //     lbl2 = "#"
+  //   }
 }
 
 async function getData() {
