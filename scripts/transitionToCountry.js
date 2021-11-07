@@ -2,6 +2,7 @@ let index = 0;
 let dummy = 0;
 let countries = [];
 
+
 async function fetchIt() {
   try {
     const response = await fetch("https://chart-r.herokuapp.com/countries");
@@ -11,6 +12,7 @@ async function fetchIt() {
     alert("Server connection failed");
   }
 }
+
 
 window.addEventListener("DOMContentLoaded", () => {
   fetchIt();
