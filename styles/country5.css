@@ -71,7 +71,9 @@ p {
 
 #learnGINI:hover,
 #learnGDP:hover,
-#learnHDI:hover {
+#learnHDI:hover
+#learnEXTDEB:hover
+#learnEXP:hover {
   box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
   transition: 0.5s;
 }
@@ -86,7 +88,12 @@ p {
   display: none;
 }
 
-.UNEMP {
+.EXTDEB{
+  opacity: 0;
+  display: none;
+}
+
+.EXP{
   opacity: 0;
   display: none;
 }
