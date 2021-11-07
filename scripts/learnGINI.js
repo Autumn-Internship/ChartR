@@ -8,7 +8,7 @@ async function fetchGINI() {
     parseGINI(allCountries);
     drawGINIMap();
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 

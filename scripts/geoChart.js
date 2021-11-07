@@ -8,7 +8,7 @@ async function fetchAll() {
     parseCities(allCities);
     drawMarkersMap();
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 
