@@ -1,26 +1,26 @@
-let arrayHDI = [["Country", "HDI"]];
+let arrayExtDebt = [["Country","External Debt"]];
 
-async function fetchHDI() {
+async function fetchExtDebt() {
   try {
     const response = await fetch("https://chart-r.herokuapp.com/countriesData");
     const data = await response.json();
     allCountries = data;
-    parseHDI(allCountries);
-    drawHDIMap();
+    parseExtDebt(allCountries);
+    drawExtDebtMap();
   } catch (err) {
     alert("Server connection failed");
   }
 }
 
-function parseHDI(arr) {
-  arr.reduce((arrayHDI, elem) => {
-    arrayHDI.push([elem.id, elem['HDI']]);
-    return arrayHDI;
-  }, arrayHDI);
+function parseExtDebt(arr) {
+  arr.reduce((arrayExtDebt, elem) => {
+    arrayExtDebt.push([elem.id, elem["External Debt"]]);
+    return arrayExtDebt;
+  }, arrayExtDebt);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  fetchHDI();
+  fetchExtDebt();
 });
 
 google.charts.load("current", {
@@ -28,13 +28,13 @@ google.charts.load("current", {
   mapsApiKey: "AIzaSyCFI15YTgkjpnyxsiPzvteXXWn3Gge4G4s",
 });
 
-function drawHDIMap() {
-  var data = google.visualization.arrayToDataTable(arrayHDI);
+function drawExtDebtMap() {
+  var data = google.visualization.arrayToDataTable(arrayExtDebt);
 
   var options = {
     region: "150",
     colorAxis: {
-      colors: [  "#DF2935","#E63946", "#F9DC5C","#8AEA92","#3F784C"],
+      colors: ["#DF2935","#E63946", "#F9DC5C","#8AEA92","#3F784C"],
     },
     legend: "none",
     keepAspectRatio: false,
@@ -47,7 +47,7 @@ function drawHDIMap() {
   };
 
   var chart = new google.visualization.GeoChart(
-    document.getElementById("learnHDI")
+    document.getElementById("learnEXTDEB")
   );
 
   chart.draw(data, options);

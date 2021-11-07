@@ -1,26 +1,26 @@
-let arrayHDI = [["Country", "HDI"]];
+let arrayExport = [["Country", "Exports"]];
 
-async function fetchHDI() {
+async function fetchExport() {
   try {
     const response = await fetch("https://chart-r.herokuapp.com/countriesData");
     const data = await response.json();
     allCountries = data;
-    parseHDI(allCountries);
-    drawHDIMap();
+    parseExport(allCountries);
+    drawExportsMap();
   } catch (err) {
     alert("Server connection failed");
   }
 }
 
-function parseHDI(arr) {
-  arr.reduce((arrayHDI, elem) => {
-    arrayHDI.push([elem.id, elem['HDI']]);
-    return arrayHDI;
-  }, arrayHDI);
+function parseExport(arr) {
+  arr.reduce((arrayExport, elem) => {
+    arrayExport.push([elem.id, elem['Exports']]);
+    return arrayExport;
+  }, arrayExport);
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  fetchHDI();
+  fetchExport();
 });
 
 google.charts.load("current", {
@@ -28,8 +28,8 @@ google.charts.load("current", {
   mapsApiKey: "AIzaSyCFI15YTgkjpnyxsiPzvteXXWn3Gge4G4s",
 });
 
-function drawHDIMap() {
-  var data = google.visualization.arrayToDataTable(arrayHDI);
+function drawExportsMap() {
+  var data = google.visualization.arrayToDataTable(arrayExport);
 
   var options = {
     region: "150",
@@ -47,7 +47,7 @@ function drawHDIMap() {
   };
 
   var chart = new google.visualization.GeoChart(
-    document.getElementById("learnHDI")
+    document.getElementById("learnEXP")
   );
 
   chart.draw(data, options);

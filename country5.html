@@ -12,6 +12,8 @@
 <script src="scripts/learnGDP.js"></script>
 <script src="scripts/learnHDI.js"></script>
 <script src="scripts/learnUNEMP.js"></script>
+<script src="scripts/learnEXTDEB.js"></script>
+<script src="scripts/leanEXP.js"></script>
 </head>
 
 <body>
@@ -92,7 +94,7 @@
            <div id="learnHDI"></div>
         </div>    
     </div>
-        <p onclick="next('HDI', 'EXTDEB');" class="arrow">🢂</p>
+        <p onclick="next('HDI', 'EXTDEB'); fetchExtDebt()" class="arrow">🢂</p>
     </div>
 </div>
 
@@ -111,11 +113,11 @@
 
     <div class="flexColumn">
         <div class="flexMap">
-            <h3>HDI map of EU</h3>
+            <h3>External debt map of EU</h3>
            <div id="learnEXTDEB"></div>
         </div>    
     </div>
-        <p onclick="next('EXTDEB', 'EXP');" class="arrow">🢂</p>
+        <p onclick="next('EXTDEB', 'EXP'); fetchExport()" class="arrow">🢂</p>
     </div>
 </div>
 
@@ -132,7 +134,7 @@
 
     <div class="flexColumn">
         <div class="flexMap">
-            <h3>HDI map of EU</h3>
+            <h3>Export map of EU</h3>
            <div id="learnEXP"></div>
         </div>    
     </div>
