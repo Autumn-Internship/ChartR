@@ -14,7 +14,7 @@ async function fetchExport() {
 
 function parseExport(arr) {
   arr.reduce((arrayExport, elem) => {
-    arrayExport.push([elem.id, elem['Exports']]);
+    arrayExport.push([elem.id, elem["Exports"]]);
     return arrayExport;
   }, arrayExport);
 }
@@ -34,7 +34,8 @@ function drawExportsMap() {
   var options = {
     region: "150",
     colorAxis: {
-      colors: [  "#DF2935","#E63946", "#F9DC5C","#8AEA92","#3F784C"],
+      colors: ["#DF2935", "#E63946", "#F9DC5C", "#8AEA92", "#3F784C"],
+      maxValue: 0.8,
     },
     legend: "none",
     keepAspectRatio: false,

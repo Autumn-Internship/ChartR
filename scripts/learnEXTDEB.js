@@ -1,4 +1,4 @@
-let arrayExtDebt = [["Country","External Debt"]];
+let arrayExtDebt = [["Country", "External Debt"]];
 
 async function fetchExtDebt() {
   try {
@@ -34,7 +34,8 @@ function drawExtDebtMap() {
   var options = {
     region: "150",
     colorAxis: {
-      colors: ["#DF2935","#E63946", "#F9DC5C","#8AEA92","#3F784C"],
+      colors: ["#8AEA92", "#3F784C", "#F9DC5C", "#DF2935", "#E63946"],
+      maxValue: 4,
     },
     legend: "none",
     keepAspectRatio: false,
