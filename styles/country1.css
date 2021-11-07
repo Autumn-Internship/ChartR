@@ -1,3 +1,7 @@
+.outerContainer {
+  margin: 4% auto;
+}
+
 .flexRow {
   margin-top: 4vh;
   display: flex;

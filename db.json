@@ -892,5 +892,161 @@
         "GINI": 28,
         "External Debt": 0.005,
         "Average Net Salary": 1021
-    }]
-}
+    }],
+    "citiesData": [
+        {
+             "id": "Munich",
+             "GMP": 194.9,
+             "Population": 5991144
+        },
+        {
+             "id": "Berlin",
+             "GMP": 193.3,
+             "Population": 6004857
+        },
+        {
+             "id": "Ruhr",
+             "GMP": 168.4,
+             "Population": 5118681
+        },
+        {
+             "id": "Stuttgart Region",
+             "GMP": 155.7,
+             "Population": 2735425
+        },
+        {
+             "id": "Frankfurt/Rhine-Main",
+             "GMP": 152.2,
+             "Population": 5808518
+        },
+        {
+             "id": "Paris metropolitan area",
+             "GMP": 742,
+             "Population": 12628266
+        },
+        {
+            "id": "Marseille metropolitan area",
+            "GMP": 101.2,
+            "Population": 1760653
+       },
+       {
+            "id": "Lyon metropolitan area",
+            "GMP": 89.5,
+            "Population": 2323221
+        },
+        {
+            "id": "Madrid metropolitan area",
+            "GMP": 231.1,
+            "Population": 6321398
+        },
+        {
+            "id": "Barcelona metropolitan area",
+            "GMP": 171.4,
+            "Population": 5355127
+        },
+        {
+            "id": "Valencia metropolitan area",
+            "GMP": 59.1,
+            "Population": 2522383
+        },
+        {
+            "id": "Milan metropolitan area",
+            "GMP": 213.8,
+            "Population": 8220170
+        },
+        {
+            "id": "Rome metropolitan area",
+            "GMP": 165.3,
+            "Population": 4353738
+        },
+        {
+            "id": "Turin metropolitan area",
+            "GMP": 75.7,
+            "Population": 1646064
+        },
+        {
+            "id": "Amsterdam metropolitan area",
+            "GMP": 182.7,
+            "Population": 2480394
+        },
+        {
+            "id": "Rotterdam-The Hague metropolitan area",
+            "GMP": 84.9,
+            "Population": 2563197
+        },
+        {
+            "id": "Dublin metropolitan area",
+            "GMP": 171.4,
+            "Population": 1904806
+        },
+        {
+            "id": "Stockholm metropolitan area",
+            "GMP": 147.8,
+            "Population": 2205105
+        },
+        {
+            "id": "Gothenburg metropolitan area",
+            "GMP": 79.2,
+            "Population": 1025355
+        },
+        {
+            "id": "Malmö metropolitan area",
+            "GMP": 54,
+            "Population": 733037
+        },
+        {
+            "id": "Brussels Capital Region",
+            "GMP": 147.7,
+            "Population": 2500000
+        },
+        {
+            "id": "Antwerp metropolitan area",
+            "GMP": 53.6,
+            "Population": 1200000
+        },
+        {
+            "id": "Greater Copenhagen",
+            "GMP": 134.9,
+            "Population": 2699551
+        },
+        {
+            "id": "Vienna metropolitan area",
+            "GMP": 132.2,
+            "Population": 2600000
+        },
+        {
+            "id": "Greater Helsinki",
+            "GMP": 91.7,
+            "Population": 1526694
+        },
+        {
+            "id": "Warsaw metropolitan area",
+            "GMP": 86.3,
+            "Population": 3053104
+        },
+        {
+            "id": "Athens metropolitan area",
+            "GMP": 81.9,
+            "Population": 3753783
+        },
+        {
+            "id": "Prague metropolitan area",
+            "GMP": 81.6,
+            "Population": 2709418
+        },
+        {
+            "id": "Lisbon metropolitan area",
+            "GMP": 73.6,
+            "Population": 2884297
+        },
+        {
+            "id": "Budapest metropolitan area",
+            "GMP": 69.4,
+            "Population": 3303786
+        },
+        {
+            "id": "Bucharest metropolitan area",
+            "GMP": 55.2,
+            "Population": 2272163
+        }
+    ]}

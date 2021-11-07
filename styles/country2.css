@@ -4,7 +4,7 @@
 }
 
 .outerContainer {
-  margin: 6% auto;
+  margin: 6.2% auto;
 }
 
 .flexRow {
@@ -74,4 +74,9 @@ h2 {
   transform: scale(1.25);
   color: #ad0b2e;
   transition: 0.5s;
+}
+
+.secondComparison {
+  opacity: 0;
+  display: none;
 }
