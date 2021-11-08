@@ -8,7 +8,7 @@ async function fetchExport() {
     parseExport(allCountries);
     drawExportsMap();
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 
@@ -18,10 +18,6 @@ function parseExport(arr) {
     return arrayExport;
   }, arrayExport);
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-  fetchExport();
-});
 
 google.charts.load("current", {
   packages: ["geochart"],

@@ -8,7 +8,7 @@ async function fetchExtDebt() {
     parseExtDebt(allCountries);
     drawExtDebtMap();
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 
@@ -18,10 +18,6 @@ function parseExtDebt(arr) {
     return arrayExtDebt;
   }, arrayExtDebt);
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-  fetchExtDebt();
-});
 
 google.charts.load("current", {
   packages: ["geochart"],
