@@ -8,7 +8,7 @@ async function fetchExport() {
     parseExport(allCountries);
     drawExportsMap();
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 
@@ -18,11 +18,6 @@ function parseExport(arr) {
     return arrayExport;
   }, arrayExport);
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-  fetchExport();
-});
-
 google.charts.load("current", {
   packages: ["geochart"],
   mapsApiKey: "AIzaSyCFI15YTgkjpnyxsiPzvteXXWn3Gge4G4s",
@@ -38,9 +33,7 @@ function drawExportsMap() {
       maxValue: 0.8,
     },
     legend: "none",
-    keepAspectRatio: false,
-    height: 400,
-    width: 625,
+    width: 0.4 * width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,

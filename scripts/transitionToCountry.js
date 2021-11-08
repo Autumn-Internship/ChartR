@@ -2,7 +2,6 @@ let index = 0;
 let dummy = 0;
 let countries = [];
 
-
 async function fetchIt() {
   try {
     const response = await fetch("https://chart-r.herokuapp.com/countries");
@@ -12,7 +11,6 @@ async function fetchIt() {
     alert("Server connection failed");
   }
 }
-
 
 window.addEventListener("DOMContentLoaded", () => {
   fetchIt();
@@ -38,7 +36,7 @@ function nextCountry() {
     }, 500);
 
     setTimeout(function () {
-      document.querySelector(".currentCountry").style.display = "block";
+      document.querySelector(".currentCountry").style.display = "flex";
       document.querySelector(".currentCountry").style.opacity = 1;
     }, 500);
   }
@@ -64,7 +62,7 @@ function prevCountry() {
     }, 500);
 
     setTimeout(function () {
-      document.querySelector(".currentCountry").style.display = "block";
+      document.querySelector(".currentCountry").style.display = "flex";
       document.querySelector(".currentCountry").style.opacity = 1;
     }, 500);
   }

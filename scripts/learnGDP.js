@@ -34,9 +34,7 @@ function drawGDPMap() {
       maxValue: 65000,
     },
     legend: "none",
-    keepAspectRatio: false,
-    height: 400,
-    width: 625,
+    width: 0.4 * width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,

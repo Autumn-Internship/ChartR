@@ -11,7 +11,7 @@ function next(current, next) {
     }, 500);
 
     setTimeout(function () {
-      document.querySelector(`.${next}`).style.display = "block";
+      document.querySelector(`.${next}`).style.display = "flex";
       document.querySelector(`.${next}`).style.opacity = 1;
     }, 500);
   }
@@ -28,7 +28,7 @@ function prev(current, prev) {
     }, 500);
 
     setTimeout(function () {
-      document.querySelector(`.${prev}`).style.display = "block";
+      document.querySelector(`.${prev}`).style.display = "flex";
       document.querySelector(`.${prev}`).style.opacity = 1;
     }, 500);
   }

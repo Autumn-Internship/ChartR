@@ -1,4 +1,5 @@
 let arrayGINI = [["Country", "GINI"]];
+let width = window.innerWidth;
 
 async function fetchGINI() {
   try {
@@ -30,16 +31,13 @@ google.charts.load("current", {
 
 function drawGINIMap() {
   var data = google.visualization.arrayToDataTable(arrayGINI);
-
   var options = {
     region: "150",
     colorAxis: {
       colors: ["#3F784C", "#8AEA92", "#F9DC5C", "#E63946", "#DF2935"],
     },
     legend: "none",
-    keepAspectRatio: false,
-    height: 400,
-    width: 625,
+    width: 0.4 * width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,
