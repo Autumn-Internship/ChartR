@@ -19,6 +19,15 @@
   gap: 100px;
 }
 
+
+.flexRow2 {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 100px;
+}
+
 .flexColumn {
   display: flex;
   flex-direction: column;
