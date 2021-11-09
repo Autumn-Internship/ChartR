@@ -1,4 +1,18 @@
+<<<<<<< HEAD
 .flexRow {
+=======
+:root {
+  --usedFont: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.outerContainer {
+  height: 38.25rem;
+}
+
+.flexRow {
+  margin-top: 1.8rem;
+>>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -10,7 +24,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+<<<<<<< HEAD
   width: 35%;
+=======
+  height: 30rem;
+  width: 32.5rem;
+>>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
 }
 
 .flexInfo,
@@ -29,12 +48,13 @@
 
 h1 {
   text-align: center;
-  font-family: "Federo";
-  font-size: 4vh;
+  font-family: var(--usedFont);
+  font-size: 1.8rem;
   color: firebrick;
 }
 
 h2 {
+<<<<<<< HEAD
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 1.75vh;
@@ -52,19 +72,38 @@ h2 {
 .image {
   height: 52.5vh;
   width: 40vw;
+=======
+  font-family: var(--usedFont);
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin: 0.15rem 2rem;
+}
+
+.flag {
+  width: 9.5rem;
+  height: 6rem;
+  outline: 0.1rem solid black;
+}
+
+.image {
+  height: 25rem;
+  width: 35rem;
+>>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
   align-self: center;
-  outline: 0.4vh solid black;
+  outline: 0.15rem solid black;
 }
 
 .image:hover,
 .flag:hover {
-  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2rem 2.5rem 0 rgba(0, 0, 0, 0.4),
+    0 2.5rem 7.5rem 0 rgba(0, 0, 0, 0.4);
   transform: scale(1.1);
   transition: 0.5s;
 }
 
 .arrow {
-  font-size: 4.5vh;
+  font-size: 2.2rem;
   color: #d03711;
   align-self: center;
   cursor: pointer;

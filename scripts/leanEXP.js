@@ -18,6 +18,10 @@ function parseExport(arr) {
     return arrayExport;
   }, arrayExport);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
 google.charts.load("current", {
   packages: ["geochart"],
   mapsApiKey: "AIzaSyCFI15YTgkjpnyxsiPzvteXXWn3Gge4G4s",

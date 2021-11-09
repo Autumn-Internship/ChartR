@@ -39,6 +39,8 @@ function drawMarkersMap() {
       maxValue: 300,
     },
     keepAspectRatio: false,
+    width: 650,
+    height: 425,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,

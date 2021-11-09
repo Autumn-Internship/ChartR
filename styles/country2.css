@@ -1,176 +1,91 @@
-:root {
-  --usedFont: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.outerContainer {
+  height: 34.5rem;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 426px) {
-  .outerContainer {
-    margin: 6.2% auto;
-  }
-
-  .flexRow {
-    margin-top: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .flexColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  h2 {
-    font-family: var(--usedFont);
-    font-size: 2vh;
-    font-weight: bold;
-    color: green;
-    text-align: center;
-  }
-
-  #country1,
-  #country2 {
-    font-family: var(--usedFont);
-    width: 15vw;
-    height: 5vh;
-    font-size: 1.75vh;
-    text-align: center;
-    outline: 0.2vh solid black;
-  }
-
-  #country1:hover,
-  #country2:hover {
-    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4),
-      0 20px 60px 0 rgba(0, 0, 0, 0.4);
-    transition: 0.5s;
-  }
-
-  #compareButton {
-    width: 7.5vw;
-    height: 7.5vh;
-    align-self: center;
-    text-align: center;
-    font-size: 1.75vh;
-    border-radius: 10%;
-    border: 0.225vh solid black;
-    margin-top: 15%;
-    font-family: var(--usedFont);
-  }
-
-  #compareButton:hover {
-    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4),
-      0 20px 60px 0 rgba(0, 0, 0, 0.4);
-    color: white;
-    background-color: royalblue;
-    transition: 0.5s;
-  }
-
-  .arrow {
-    font-size: 4.5vh;
-    color: #d03711;
-    align-self: center;
-    cursor: pointer;
-  }
-
-  .arrow:hover {
-    transform: scale(1.25);
-    color: #ad0b2e;
-    transition: 0.5s;
-  }
-
-  .secondComparison {
-    opacity: 0;
-    display: none;
-  }
-
-  .radarChart {
-    width: 50vw;
-  }
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-@media only screen and (min-width: 1025px) {
-  .outerContainer {
-    margin: 6.2% auto;
-  }
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  .flexRow {
-    margin-top: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
+h2 {
+  font-family: var(--usedFont);
+  font-size: 0.9rem;
+  color: firebrick;
+  text-align: center;
+}
 
-  .flexColumn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+#country1,
+#country2 {
+  font-family: var(--usedFont);
+  width: 12.5rem;
+  height: 2.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+  outline: 0.05rem solid black;
+}
 
-  h2 {
-    font-family: var(--usedFont);
-    font-size: 2vh;
-    font-weight: bold;
-    color: firebrick;
-    text-align: center;
-  }
+#country1:hover,
+#country2:hover {
+  box-shadow: 0 2rem 2.5rem 0 rgba(0, 0, 0, 0.4),
+    0 2.5rem 7.5rem 0 rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
 
-  #country1,
-  #country2 {
-    font-family: var(--usedFont);
-    width: 15vw;
-    height: 5vh;
-    font-size: 1.75vh;
-    text-align: center;
-    outline: 0.2vh solid black;
-  }
+#compareButton {
+  width: 7.5rem;
+  height: 3.5rem;
+  align-self: center;
+  text-align: center;
+  font-size: 0.75rem;
+  border-radius: 10%;
+  border: 0.1rem solid black;
+  margin-top: 2rem;
+  font-family: var(--usedFont);
+}
 
-  #country1:hover,
-  #country2:hover {
-    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4),
-      0 20px 60px 0 rgba(0, 0, 0, 0.4);
-    transition: 0.5s;
-  }
+#compareButton:hover {
+  box-shadow: 0 2rem 2.5rem 0 rgba(0, 0, 0, 0.4),
+    0 2.5rem 7.5rem 0 rgba(0, 0, 0, 0.4);
+  color: white;
+  background-color: royalblue;
+  transition: 0.5s;
+}
 
-  #compareButton {
-    width: 7.5vw;
-    height: 7.5vh;
-    align-self: center;
-    text-align: center;
-    font-size: 1.75vh;
-    border-radius: 10%;
-    border: 0.225vh solid black;
-    margin-top: 15%;
-    font-family: var(--usedFont);
-  }
+.arrow {
+  font-size: 2.2rem;
+  color: #d03711;
+  align-self: center;
+  cursor: pointer;
+}
 
-  #compareButton:hover {
-    box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4),
-      0 20px 60px 0 rgba(0, 0, 0, 0.4);
-    color: white;
-    background-color: royalblue;
-    transition: 0.5s;
-  }
+.arrow:hover {
+  transform: scale(1.25);
+  color: #ad0b2e;
+  transition: 0.5s;
+}
 
-  .arrow {
-    font-size: 4.5vh;
-    color: #d03711;
-    align-self: center;
-    cursor: pointer;
-  }
+.secondComparison {
+  opacity: 0;
+  display: none;
+}
 
-  .arrow:hover {
-    transform: scale(1.25);
-    color: #ad0b2e;
-    transition: 0.5s;
-  }
+.radarChart {
+  width: 28rem;
+}
 
-  .secondComparison {
-    opacity: 0;
-    display: none;
-  }
+.polarAreaChart,
+.doughnutChart {
+  width: 22.5rem;
+  margin-bottom: 2.95rem;
+}
 
-  .radarChart {
-    width: 27.5vw;
-  }
+.barChart {
+  width: 22.5rem;
 }
