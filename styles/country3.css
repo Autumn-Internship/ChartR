@@ -3,13 +3,6 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
-
-
-.outerContainer {
-  margin: 4.5% auto;
-  height: 95%;
-}
-
 .flexRow {
   margin-top: 2%;
   display: flex;

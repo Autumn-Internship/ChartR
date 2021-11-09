@@ -1,6 +1,6 @@
 .homeWallpaper {
-  height: 20vh;
-  width: 15vw;
+  height: 25vh;
+  width: auto;
 }
 
 .flexRow {
@@ -24,7 +24,6 @@
 
 .flexRow h2 {
   font-size: 2vh;
-  font-weight: bold;
   font-family: "Federo";
 }
 
@@ -43,14 +42,7 @@
 
 .flexRow a:hover {
   box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.5s;
   transform: scale(1.1);
-  transition: transform 0.5s;
+  transition: 0.7s;
   cursor: pointer;
 }
-
-/* @media screen and (min-width: 320px) and (max-width: 425px) {
-  .flexRow h1 {
-    color: red;
-  }
-} */

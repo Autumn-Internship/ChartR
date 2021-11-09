@@ -11,3 +11,21 @@ function markActive(current) {
     document.querySelector(".active").classList.remove("active");
   document.querySelector(`.${current}`).classList.add("active");
 }
+
+function showMenu() {
+  let menu = document.querySelector(".mobileFlex");
+  let burger = document.querySelector(".burger");
+  if (menu.style.visibility == "") {
+    menu.style.backgroundColor = "rgba(0,0,0,1)";
+    menu.style.transition = ".5s";
+    menu.style.visibility = "visible";
+    burger.style.transform = "scale(1.25)";
+    burger.src = "imagini/burger.png";
+  } else if (menu.style.visibility === "visible") {
+    menu.style.backgroundColor = "rgba(0,0,0,0)";
+    menu.style.transition = ".5s";
+    menu.style.visibility = "";
+    burger.style.transform = "scale(1)";
+    burger.src = "imagini/burger2.png";
+  }
+}

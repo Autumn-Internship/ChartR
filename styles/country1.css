@@ -1,20 +1,16 @@
-.outerContainer {
-  margin: 4% auto;
-}
-
 .flexRow {
-  margin-top: 4vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  height: 88%;
 }
 
 .flexColumn {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 65vh;
-  width: 40%;
+  width: 35%;
 }
 
 .flexInfo,
@@ -41,21 +37,21 @@ h1 {
 h2 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: 2vh;
+  font-size: 1.75vh;
   font-weight: bold;
   color: black;
-  margin: 1.25% 10%;
+  margin: 1% 7.5%;
 }
 
 .flag {
-  width: 10vw;
+  width: auto;
   height: 12.5vh;
   outline: 0.225vh solid black;
 }
 
 .image {
-  height: 55vh;
-  width: 42.5%;
+  height: 52.5vh;
+  width: 40vw;
   align-self: center;
   outline: 0.4vh solid black;
 }
@@ -78,4 +74,31 @@ h2 {
   transform: scale(1.25);
   color: #ad0b2e;
   transition: 0.5s;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1299px) {
+  .flexRow {
+    height: 86.5%;
+  }
+  .outerContainer {
+    height: 60%;
+  }
+  h1 {
+    font-size: 3vh;
+  }
+
+  h2 {
+    font-size: 1.4vh;
+    margin: 1% 5%;
+  }
+
+  .flag {
+    width: auto;
+    height: 8vh;
+  }
+
+  .image {
+    height: 27.5vh;
+    width: 40vw;
+  }
 }
