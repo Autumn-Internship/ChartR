@@ -12,38 +12,23 @@ body {
   margin: 0;
   background-image: url("https://wallpapercave.com/wp/wp2003015.jpg");
   background-size: cover;
-<<<<<<< HEAD
   min-height: 100%;
-=======
->>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
 }
 
 .outerContainer {
   background-image: url("https://webgradients.com/public/webgradients_png/089%20Premium%20White.png");
   background-size: cover;
-<<<<<<< HEAD
   outline: 0.25vh solid black;
   position: absolute;
   height: 80%;
   width: 85%;
-=======
-  position: absolute;
-  width: 82.5rem;
-  height: 34rem;
->>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-<<<<<<< HEAD
   opacity: 0.9;
   border-radius: 5%;
-=======
-  outline: 0.1rem solid black;
-  opacity: 0.9;
-  border-radius: 2.5%;
->>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
 }
 
 header {
@@ -54,34 +39,17 @@ header {
 
 header span {
   font-weight: bold;
-  position: relative;
   color: black;
-  font-size: 0.9rem;
-  margin: 1rem 2rem;
+  font-size: 2vh;
+  padding: 1% 2.5%;
   font-family: "Federo";
   text-transform: uppercase;
   cursor: pointer;
 }
 
 header span:hover {
-  font-size: 1.1rem;
+  font-size: 2.25vh;
   transition: 0.5s;
-}
-
-footer {
-  position: relative;
-  display: flex;
-  margin-top: 1.25rem;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-footer p {
-  font-size: 0.7rem;
-  font-weight: bold;
-  color: black;
-  font-family: "Federo";
 }
 
 .home {
@@ -107,86 +75,17 @@ footer p {
   color: #a3333d;
 }
 
-<<<<<<< HEAD
 footer {
   display: flex;
   margin-top: 1.25%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-=======
-/* 80% and less */
-@media only screen and (min-width: 1920px) and (orientation: landscape) {
-  .outerContainer {
-    width: 90rem;
-    height: 39.25rem;
-    outline: 0.15rem solid black;
-  }
-  header span {
-    font-size: 1.15rem;
-    margin: 1rem 2.5rem;
-  }
-  header span:hover {
-    font-size: 1.3rem;
-  }
-  footer p {
-    font-size: 0.8rem;
-  }
->>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
 }
 
-/* 110-150% */
-@media only screen and (min-width: 1023px) and (max-width: 1397px) and (orientation: landscape) {
-  .outerContainer {
-    width: 55rem;
-    height: 24rem;
-  }
-  header span {
-    font-size: 0.7rem;
-    margin: 0.8rem 1.5rem;
-  }
-  header span:hover {
-    font-size: 0.8rem;
-  }
-  footer p {
-    font-size: 0.5rem;
-  }
-}
-
-/* 175-200% */
-@media only screen and (min-width: 767px) and (max-width: 1023px) and (orientation: landscape) {
-  .outerContainer {
-    width: 45rem;
-    height: 18rem;
-    outline: 0.07rem solid black;
-  }
-  header span {
-    font-size: 0.5rem;
-    margin: 0.6rem 1rem;
-  }
-  header span:hover {
-    font-size: 0.6rem;
-  }
-  footer p {
-    font-size: 0.4rem;
-  }
-}
-
-/* 250-300% */
-@media only screen and (min-width: 512px) and (max-width: 767px) and (orientation: landscape) {
-  .outerContainer {
-    width: 30rem;
-    height: 13.2rem;
-    outline: 0.05rem solid black;
-  }
-  header span {
-    font-size: 0.3rem;
-    margin: 0.4rem 0.75rem;
-  }
-  header span:hover {
-    font-size: 0.35rem;
-  }
-  footer p {
-    font-size: 0.25rem;
-  }
+footer p {
+  font-size: 1.5vh;
+  font-weight: bold;
+  color: black;
+  font-family: "Federo";
 }

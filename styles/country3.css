@@ -4,10 +4,11 @@
 }
 
 .outerContainer {
-  height: 35.5rem;
+  margin: 4.5% auto;
 }
 
 .flexRow {
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -17,25 +18,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30rem;
+  width: 30vw;
 }
 
 .flexMap {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 45vw;
 }
 
 h2 {
   font-family: var(--usedFont);
-  font-size: 1.3rem;
+  font-size: 2.5vh;
+  font-weight: bold;
   text-align: center;
   color: firebrick;
 }
 
 h3 {
   font-family: var(--usedFont);
-  font-size: 0.8rem;
+  font-size: 1.75vh;
+  font-weight: bold;
   text-align: center;
   color: firebrick;
 }
@@ -43,12 +47,11 @@ h3 {
 p {
   font-family: var(--usedFont);
   font-weight: bold;
-  font-size: 0.65rem;
+  font-size: 1.4vh;
   text-align: justify;
 }
 
 #citiesDiv:hover {
-  box-shadow: 0 2rem 2.5rem 0 rgba(0, 0, 0, 0.4),
-    0 2.5rem 7.5rem 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
   transition: 0.5s;
 }

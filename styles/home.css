@@ -1,5 +1,4 @@
 .homeWallpaper {
-<<<<<<< HEAD
   height: 25vh;
   width: auto;
 }
@@ -9,10 +8,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-=======
-  height: 9.5rem;
-  width: 15rem;
->>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
 }
 
 .flexColumn {
@@ -21,121 +16,33 @@
   align-items: center;
 }
 
-h1 {
-  font-size: 2.25rem;
+.flexRow h1 {
+  font-size: 5vh;
   font-family: "Federo";
   color: royalblue;
 }
 
-<<<<<<< HEAD
 .flexRow h2 {
   font-size: 2vh;
-=======
-h2 {
-  font-size: 0.9rem;
->>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
   font-family: "Federo";
 }
 
-a {
-  font-size: 1rem;
+.flexRow a {
+  font-size: 2vh;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: whitesmoke;
-  padding: 1rem 1.3rem;
-  outline: 0.075rem solid black;
+  padding: 2vh 2vw;
+  outline: 0.2vh solid black;
   background-color: royalblue;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 1.5rem;
+  margin-top: 5%;
 }
 
-<<<<<<< HEAD
 .flexRow a:hover {
   box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.4), 0 20px 60px 0 rgba(0, 0, 0, 0.4);
   transform: scale(1.1);
   transition: 0.7s;
   cursor: pointer;
 }
-=======
-a:hover {
-  box-shadow: 0 2rem 2.5rem 0 rgba(0, 0, 0, 0.4),
-    0 2.5rem 7.5rem 0 rgba(0, 0, 0, 0.4);
-  transform: scale(1.1);
-  transition: 0.5s;
-  cursor: pointer;
-}
-
-/* 80% and less */
-@media only screen and (min-width: 1920px) and (orientation: landscape) {
-  h1 {
-    font-size: 2.75rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-  }
-  a {
-    font-size: 1.2rem;
-    padding: 1.25rem 2.25rem;
-  }
-}
-
-/* 110-150% */
-@media only screen and (min-width: 1023px) and (max-width: 1397px) and (orientation: landscape) {
-  h1 {
-    font-size: 1.25rem;
-  }
-  h2 {
-    font-size: 0.7rem;
-  }
-  .homeWallpaper {
-    height: 6rem;
-    width: 10rem;
-  }
-  a {
-    font-size: 0.75rem;
-    padding: 0.75rem 1rem;
-    outline: 0.065rem solid black;
-  }
-}
-
-/* 175-200% */
-@media only screen and (min-width: 767px) and (max-width: 1023px) and (orientation: landscape) {
-  h1 {
-    font-size: 1rem;
-  }
-  h2 {
-    font-size: 0.5rem;
-  }
-  .homeWallpaper {
-    height: 4rem;
-    width: 6rem;
-  }
-  a {
-    font-size: 0.5rem;
-    padding: 0.6rem 0.75rem;
-    margin-top: 1.3rem;
-    outline: 0.055rem solid black;
-  }
-}
-
-/* 250-300% */
-@media only screen and (min-width: 512px) and (max-width: 767px) and (orientation: landscape) {
-  h1 {
-    font-size: 0.6rem;
-  }
-  h2 {
-    font-size: 0.35rem;
-  }
-  .homeWallpaper {
-    height: 3.25rem;
-    width: 4.75rem;
-  }
-  a {
-    font-size: 0.3rem;
-    padding: 0.4rem 0.6rem;
-    margin-top: 1.1rem;
-    outline: 0.035rem solid black;
-  }
-}
->>>>>>> 6a0b7d8f401b3b83b87f92be127dda81c61b881b
