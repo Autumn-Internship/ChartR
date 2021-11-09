@@ -100,6 +100,10 @@ h2 {
   align-items: center;
 }
 
+footer {
+  margin: 10vh;
+}
+
 @media only screen and (min-width: 320px) {
   .flexContainer {
     flex-direction: column;
