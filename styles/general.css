@@ -10,9 +10,11 @@ html {
 
 body {
   margin: 0;
+
   background-image: url("https://wallpapercave.com/wp/wp2003015.jpg");
   background-size: cover;
   min-height: 100%;
+
 }
 
 .outerContainer {
@@ -85,6 +87,7 @@ footer p {
   font-weight: bold;
   color: black;
   font-family: "Federo";
+
 }
 
 header .mobile {
@@ -142,4 +145,5 @@ header .mobile {
     transform: scale(1.5);
     transition: 0.5s;
   }
+}
 }
