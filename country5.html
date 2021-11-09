@@ -4,33 +4,45 @@
 <link rel="stylesheet" type="text/css" href="styles/general.css">
 <link rel="stylesheet" type="text/css" href="styles/country5.css">
 <title> ChartR </title>
-<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="scripts/transitionToPage.js"></script>
 <script src="scripts/generalTransition.js"></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="scripts/learnGINI.js"></script>
 <script src="scripts/learnGDP.js"></script>
 <script src="scripts/learnHDI.js"></script>
-<script src="scripts/learnUNEMP.js"></script>
 <script src="scripts/learnEXTDEB.js"></script>
 <script src="scripts/leanEXP.js"></script>
 </head>
 
 <body>
     
-<main class="outerContainer">
-    <header>
-        <span onclick="transitionToPage('home.html')" class="home active">Home</span>
-        <span onclick="transitionToPage('country5.html')" class="learn">Learn</span>
-        <span onclick="transitionToPage('country1.html')" class="explore">Explore</span>
-        <span onclick="transitionToPage('country2.html')" class="compare">Compare</span>
-        <span onclick="transitionToPage('country4.html')" class="currency">Currency</span>
-        <span onclick="transitionToPage('country3.html')" class="metro">Metro</span>
-        <span onclick="transitionToPage('')" class="tba">TBA</span>
-    </header>
+    <main class="outerContainer">
+        <header>
+    
+            <div class="mobile">
+            <div class="mobileFlex">
+                <img src="imagini/burger2.png" class="burger" onclick="showMenu()">
+                <span onclick="transitionToPage('home.html')">Home</span>
+                <span onclick="transitionToPage('country5.html')">Learn</span>
+                <span onclick="transitionToPage('country1.html')">Explore</span>
+                <span onclick="transitionToPage('country2.html')">Compare</span>
+                <span onclick="transitionToPage('country4.html')">Currency</span>
+                <span onclick="transitionToPage('country3.html')">Metro</span>
+            </div>
+            </div>
+    
+            <div class="desktop">
+            <span onclick="transitionToPage('home.html')" class="home">Home</span>
+            <span onclick="transitionToPage('country5.html')" class="learn">Learn</span>
+            <span onclick="transitionToPage('country1.html')" class="explore">Explore</span>
+            <span onclick="transitionToPage('country2.html')" class="compare">Compare</span>
+            <span onclick="transitionToPage('country4.html')" class="currency">Currency</span>
+            <span onclick="transitionToPage('country3.html')" class="metro">Metro</span>
+            </div>
+        </header>
 
-<div class="GINI">
-    <div class="flexRow">
+    <div class="GINI flexRow">
         <p class="arrow">🢀</p>
     <div class="flexText">
         <h2>GINI Coefficient</h2>
@@ -42,18 +54,15 @@
         <p>The Gini coefficient is a relative measure. It is possible for the Gini coefficient of a developing country to rise (due to increasing inequality of income) while the number of people in absolute poverty decreases.This is because the Gini coefficient measures relative, not absolute, wealth.</p>
     </div>
 
-    <div class="flexColumn">
         <div class="flexMap">
             <h3>GINI map of EU</h3>
            <div id="learnGINI"></div>
-        </div>    
-    </div>
-        <p onclick="next('GINI', 'GDP'); fetchGDP()" class="arrow">🢂</p>
-    </div>
+        </div>
+
+    <p onclick="next('GINI', 'GDP'); fetchGDP()" class="arrow">🢂</p>
     </div>
 <!-- start of section (shows on the entire page) -->
-    <div class="GDP">
-    <div class="flexRow">
+    <div class="GDP flexRow"> 
         <p onclick="prev('GDP', 'GINI')" class="arrow">🢀</p>
     <div class="flexText">
         <h2>GDP (PPP)</h2>
@@ -65,18 +74,15 @@
         <p>Critics of the growth imperative often argue that GDP measures were never intended to measure progress, and leave out key other externalities, such as resource extraction, environmental impact and unpaid domestic work.</p>
     </div>
 
-    <div class="flexColumn">
         <div class="flexMap">
             <h3>GDP per Capita (PPP) map of EU</h3>
            <div id="learnGDP"></div>
         </div>    
-    </div>
+
         <p onclick="next('GDP', 'HDI'); fetchHDI()" class="arrow">🢂</p>
-    </div>
-    </div>
+</div>
 <!-- end of section (shows on the entire page) -->
-<div class="HDI">
-    <div class="flexRow">
+    <div class="HDI flexRow">
         <p onclick="prev('HDI', 'GDP')" class="arrow">🢀</p>
     <div class="flexText">
         <h2>HDI</h2>
@@ -88,18 +94,15 @@
         <p>The index does not take into account several factors, such as the net wealth per capita or the relative quality of goods in a country. This situation tends to lower the ranking for some of the most advanced countries.</p>
     </div>
 
-    <div class="flexColumn">
         <div class="flexMap">
             <h3>HDI map of EU</h3>
            <div id="learnHDI"></div>
         </div>    
-    </div>
+
         <p onclick="next('HDI', 'EXTDEB'); fetchExtDebt()" class="arrow">🢂</p>
     </div>
-</div>
 
-<div class="EXTDEB">
-    <div class="flexRow">
+    <div class="EXTDEB flexRow">
         <p onclick="prev('EXTDEB', 'HDI')" class="arrow">🢀</p>
     <div class="flexText">
         <h2>External Debts</h2>
@@ -111,18 +114,15 @@
         <p>The external debt is irrelevant to the underlying currency. The state debt is split between debt denominated in the national currency and debt denominated in any foreign currency.</p>
     </div>
 
-    <div class="flexColumn">
         <div class="flexMap">
             <h3>External debt map of EU</h3>
            <div id="learnEXTDEB"></div>
         </div>    
-    </div>
+
         <p onclick="next('EXTDEB', 'EXP'); fetchExport()" class="arrow">🢂</p>
     </div>
-</div>
 
-<div class="EXP">
-    <div class="flexRow">
+<div class="EXP flexRow">
         <p onclick="prev('EXP', 'EXTDEB')" class="arrow">🢀</p>
     <div class="flexText">
         <h2>Exports</h2>
@@ -132,14 +132,11 @@
         <p>The seller of such goods or the service provider is an exporter; the foreign buyer is an importer. Services that figure in international trade include financial, accounting and other professional services, tourism, education as well as intellectual property rights.</p>
       </div>
 
-    <div class="flexColumn">
         <div class="flexMap">
             <h3>Export map of EU</h3>
            <div id="learnEXP"></div>
         </div>    
-    </div>
         <p class="arrow">🢂</p>
-    </div>
 </div>
 
 <footer>

@@ -8,20 +8,16 @@ async function fetchHDI() {
     parseHDI(allCountries);
     drawHDIMap();
   } catch (err) {
-    alert("Server connection failed");
+    alert("Connection timed out. Please refresh the page!");
   }
 }
 
 function parseHDI(arr) {
   arr.reduce((arrayHDI, elem) => {
-    arrayHDI.push([elem.id, elem['HDI']]);
+    arrayHDI.push([elem.id, elem["HDI"]]);
     return arrayHDI;
   }, arrayHDI);
 }
-
-window.addEventListener("DOMContentLoaded", () => {
-  fetchHDI();
-});
 
 google.charts.load("current", {
   packages: ["geochart"],
@@ -34,12 +30,10 @@ function drawHDIMap() {
   var options = {
     region: "150",
     colorAxis: {
-      colors: [  "#DF2935","#E63946", "#F9DC5C","#8AEA92","#3F784C"],
+      colors: ["#DF2935", "#E63946", "#F9DC5C", "#8AEA92", "#3F784C"],
     },
     legend: "none",
-    keepAspectRatio: false,
-    height: 400,
-    width: 625,
+    width: 0.4 * width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,

@@ -1,9 +1,4 @@
-.outerContainer {
-  margin: 0.5% auto;
-  height: 95vh;
-}
-
-.topCointainer{
+.topCointainer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -73,7 +68,7 @@ select {
   box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 0.125em;
 }
 
-.currentValuesChart{
+.currentValuesChart {
   max-width: 60vw;
   max-height: 25vh;
 }
@@ -98,27 +93,26 @@ select {
   font-weight: bold;
 }
 
-
 /*Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) { 
-  .topOfCmp{
+@media only screen and (min-width: 576px) {
+  .topOfCmp {
     flex-direction: column-reverse;
   }
-  #CmpChart{
+  #CmpChart {
     margin-left: 7vw;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 1024px) {
-  .topOfCmp{
+  .topOfCmp {
     flex-direction: column-reverse;
   }
 }
 
 /*Large devices (desktops, 992px and up) */
-@media (min-width: 1440px) { 
-  .topOfCmp{
+@media (min-width: 1440px) {
+  .topOfCmp {
     flex-flow: row;
   }
 }
