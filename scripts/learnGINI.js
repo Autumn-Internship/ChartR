@@ -29,7 +29,8 @@ google.charts.load("current", {
   mapsApiKey: "AIzaSyCFI15YTgkjpnyxsiPzvteXXWn3Gge4G4s",
 });
 
-function drawGINIMap() {
+function drawGINIMap(param) {
+  console.log(param);
   var data = google.visualization.arrayToDataTable(arrayGINI);
   var options = {
     region: "150",

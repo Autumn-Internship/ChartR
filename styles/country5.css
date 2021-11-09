@@ -74,3 +74,22 @@ p {
   opacity: 0;
   display: none;
 }
+
+@media only screen and (min-width: 767px) and (max-width: 1299px) {
+  .outerContainer {
+    height: 61%;
+  }
+
+  .flexRow {
+    flex-direction: row;
+  }
+  h2 {
+    font-size: 1.6vh;
+  }
+  h3 {
+    font-size: 1.3vh;
+  }
+  p {
+    font-size: 1.1vh;
+  }
+}

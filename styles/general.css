@@ -29,15 +29,16 @@ body {
   margin: auto;
   opacity: 0.9;
   border-radius: 5%;
+  overflow: hidden;
 }
 
-header {
+header .desktop {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-header span {
+header .desktop span {
   font-weight: bold;
   color: black;
   font-size: 2vh;
@@ -47,31 +48,27 @@ header span {
   cursor: pointer;
 }
 
-header span:hover {
+header .desktop span:hover {
   font-size: 2.25vh;
   transition: 0.5s;
 }
 
-.home {
-  color: darkslateblue;
-}
-
-.learn,
-.explore {
+.desktop .learn,
+.desktop .explore {
   color: royalblue;
 }
 
-.compare,
-.currency {
+.desktop .compare,
+.desktop .currency {
   color: #058ed9;
 }
 
-.metro,
-.tba {
+.desktop .metro,
+.desktop .home {
   color: #715aff;
 }
 
-.active {
+.desktop .active {
   color: #a3333d;
 }
 
@@ -88,4 +85,61 @@ footer p {
   font-weight: bold;
   color: black;
   font-family: "Federo";
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .outerContainer {
+    outline: 0.15vh solid black;
+  }
+  header .mobile {
+    position: relative;
+  }
+  header .mobileFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    height: 80vh;
+    padding: 5% 20%;
+    left: 0;
+    gap: 2vh;
+    visibility: hidden;
+  }
+  header .mobileFlex span {
+    font-size: 2.25vh;
+    color: white;
+    font-family: "Federo";
+  }
+  header .mobile {
+    display: block;
+  }
+  header .desktop {
+    display: none;
+  }
+  .burger {
+    height: 8vh;
+    width: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+    visibility: visible;
+    background-color: rgba(black, 1);
+  }
+
+  .search {
+    height: 8vh;
+    width: auto;
+  }
+
+  .burger:hover,
+  .search:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+  }
 }
