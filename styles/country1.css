@@ -76,6 +76,10 @@ h2 {
   transition: 0.5s;
 }
 
+footer {
+  margin: 0;
+}
+
 @media only screen and (min-width: 767px) and (max-width: 1299px) {
   .flexRow {
     height: 86.5%;
