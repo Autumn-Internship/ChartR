@@ -75,13 +75,13 @@ header .desktop span:hover {
 
 footer {
   display: flex;
-  margin-top: 1.25%;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
-footer p {
+.footer {
+  position: absolute;
+  bottom: 0;
   font-size: 1.5vh;
   font-weight: bold;
   color: black;
