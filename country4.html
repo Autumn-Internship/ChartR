@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="styles/general.css">
 <link rel="stylesheet" type="text/css" href="styles/country4.css">
+<meta content="width=device-width, initial-scale=1" name="screen" />
 <title> ChartR </title>
 <meta charset="utf-8"/>
 <script src="scripts/transitionToPage.js"></script>
@@ -22,42 +23,44 @@
         <span onclick="transitionToPage('')" class="tba">TBA</span>
     </header>
     
-   <section class="topOfCmp">
-    <form id="cmpForm" action="">
-        <h1>Slect two currencies to compare</h1>
-        <select name="cmp1" id="cmp1">
-            <option value="">Plese choose an option</option>
-            <option value="629">Bulgarian Lev</option>
-            <option value="659">Croatian Kuna</option>
-            <option value="645">Czech Krouna</option>
-            <option value="9">Danish Krone</option>
-            <option value="661">Hungarian Forint</option>
-            <option value="704">Polish Zolty</option>
-            <option value="707">Romanian Leu</option>
-            <option value="68">Sweedish Krona</option>
-        </select>
-        <select name="cmp2" id="cmp2">
-            <option value="">Plese choose an option</option>
-            <option value="629">Bulgarian Lev</option>
-            <option value="659">Croatian Kuna</option>
-            <option value="645">Czech Krouna</option>
-            <option value="9">Danish Krone</option>
-            <option value="661">Hungarian Forint</option>
-            <option value="704">Polish Zolty</option>
-            <option value="707">Romanian Leu</option>
-            <option value="68">Sweedish Krona</option>
-        </select>
-        <button id="plotBtn" onclick="getData()" type="button">Search</button>
-    </form>
+   <div class="topContainer">
+    <section class="topOfCmp">
+        <form id="cmpForm" action="">
+            <h1>Slect two currencies to compare</h1>
+            <select name="cmp1" id="cmp1">
+                <option value="">Plese choose an option</option>
+                <option value="629">Bulgarian Lev</option>
+                <option value="659">Croatian Kuna</option>
+                <option value="645">Czech Krouna</option>
+                <option value="9">Danish Krone</option>
+                <option value="661">Hungarian Forint</option>
+                <option value="704">Polish Zolty</option>
+                <option value="707">Romanian Leu</option>
+                <option value="68">Sweedish Krona</option>
+            </select>
+            <select name="cmp2" id="cmp2">
+                <option value="">Plese choose an option</option>
+                <option value="629">Bulgarian Lev</option>
+                <option value="659">Croatian Kuna</option>
+                <option value="645">Czech Krouna</option>
+                <option value="9">Danish Krone</option>
+                <option value="661">Hungarian Forint</option>
+                <option value="704">Polish Zolty</option>
+                <option value="707">Romanian Leu</option>
+                <option value="68">Sweedish Krona</option>
+            </select>
+            <button id="plotBtn" onclick="getData()" type="button">Search</button>
+        </form>
+        
+        <div class="currentValuesChart">
+            <canvas id="currentCmpChart" width="500vw" height="200vh"></canvas>
+        </div>
     
-    <div class="currentValuesChart">
-        <canvas id="currentCmpChart" width="750" height="200vh"></canvas>
-    </div>
-
-   </section>
-    <div id="graphDiv">
-        <canvas id="CmpChart" width="225" height="75vh"></canvas>
-    </div>
+       </section>
+        <div id="graphDiv">
+            <canvas id="CmpChart" width="225" height="75vh"></canvas>
+        </div>
+   </div>
     
     <p id="notePar">Note: All currencies are compared using their values in regard to euro.</p>
 <footer>
