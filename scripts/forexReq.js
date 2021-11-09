@@ -7,12 +7,12 @@ const dummyLabel = new Array(300);
 let country;
 let compared1;
 let compared2;
-let lbl1, lbl2;
+let lbl1='', lbl2='';
 let data1;
 let data2;
 let currentData;
-let high1 = [];
-let high2 = [];
+let high1 = new Array(300);
+let high2 = new Array(300);
 let currentHigh = [];
 let myChart;
 let currentValuesChart;
@@ -32,6 +32,7 @@ function getCMP() {
 
 document.addEventListener("DOMContentLoaded", function () {
   plotCurrent();
+  plot();
 });
 
 async function plotCurrent() {
