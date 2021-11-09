@@ -1,5 +1,6 @@
 .outerContainer {
   margin: 0.5% auto;
+  height: 95vh;
 }
 
 .topCointainer{
@@ -96,6 +97,7 @@ select {
   text-align: center;
   font-weight: bold;
 }
+
 
 /*Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) { 
