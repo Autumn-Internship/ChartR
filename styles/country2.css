@@ -89,6 +89,7 @@ h2 {
 }
 
 .firstComparison {
+  height: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -98,16 +99,12 @@ h2 {
 .secondComparison,
 .thirdComparison,
 .fourthComparison {
-  margin-top: 9vh;
+  height: 80%;
   opacity: 0;
   display: none;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
-
-.thirdComparison{
-  margin-top: 15vh;
 }
 
 .radarChart {
@@ -126,14 +123,6 @@ h2 {
   gap: 50px;
 }
 
-/* .flexColumn1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;  
-} */
-
-
 @media only screen and (min-width: 320px) {
   .flexContainer {
     flex-direction: column;
@@ -143,7 +132,7 @@ h2 {
     margin-left: 0;
   }
   .cmpDiv {
-    max-width: 350px;
+    max-width: 450px;
   }
 }
 
