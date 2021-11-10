@@ -1,5 +1,7 @@
 let arrayGINI = [["Country", "GINI"]];
 let width = window.innerWidth;
+if (width < 768) width = width * 0.8;
+else width = width * 0.4;
 
 async function fetchGINI() {
   try {
@@ -38,7 +40,7 @@ function drawGINIMap(param) {
       colors: ["#3F784C", "#8AEA92", "#F9DC5C", "#E63946", "#DF2935"],
     },
     legend: "none",
-    width: 0.4 * width,
+    width: width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,

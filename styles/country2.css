@@ -19,7 +19,6 @@
   gap: 100px;
 }
 
-
 .flexRow2 {
   margin-top: 5%;
   display: flex;
@@ -38,7 +37,6 @@
 h2 {
   font-family: var(--usedFont);
   font-size: 2vh;
-  font-weight: bold;
   color: firebrick;
   text-align: center;
 }
@@ -79,15 +77,14 @@ h2 {
 }
 
 .arrow {
-  font-size: 4.5vh;
-  color: #d03711;
+  width: 2.25vw;
+  height: auto;
   align-self: center;
   cursor: pointer;
 }
 
 .arrow:hover {
   transform: scale(1.25);
-  color: #ad0b2e;
   transition: 0.5s;
 }
 
