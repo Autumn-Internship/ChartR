@@ -33,7 +33,7 @@ function drawHDIMap() {
       colors: ["#DF2935", "#E63946", "#F9DC5C", "#8AEA92", "#3F784C"],
     },
     legend: "none",
-    width: 0.4 * width,
+    width: width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,
