@@ -106,9 +106,10 @@ header .mobile {
     align-self: flex-start;
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
-    height: 80vh;
+    height: 65vh;
     padding: 5% 20%;
     left: 0;
+    text-align: center;
     gap: 2vh;
     visibility: hidden;
     z-index: 9;
