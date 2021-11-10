@@ -1,12 +1,14 @@
-.topCointainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+:root {
+  --usedFont: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.outerContainer {
+  height: 90%;
 }
 
 h1 {
-  font-size: 25px;
+  font-size: 2vh;
+  font-family: var(--usedFont);
 }
 
 #cmpForm {
@@ -89,14 +91,14 @@ select {
 }
 
 #notePar {
-  margin-top: 1.5px;
+  font-family: var(--usedFont);
   text-align: center;
   font-weight: bold;
-  font-size: 12.5px;
+  font-size: 1.5vh;
 }
 
 /*Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .topOfCmp {
     flex-direction: column-reverse;
   }
@@ -106,30 +108,33 @@ select {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1029px) {
+  .outerContainer {
+    height: 80%;
+  }
   .topOfCmp {
     flex-direction: column-reverse;
   }
-
-  #graphDiv{
+  #graphDiv {
     margin-top: 25px;
   }
-  
-  h1{
+  h1 {
     font-size: 20px;
   }
 }
 
 /*Large devices (desktops, 992px and up) */
-@media (min-width: 1030px) {
+@media (min-width: 1030px) and (max-width: 1440px) {
+  .outerContainer {
+    height: 70%;
+  }
   .topOfCmp {
     flex-flow: row;
-    
   }
-  #graphDiv{
+  #graphDiv {
     margin-top: 50px;
   }
-  h1{
+  h1 {
     font-size: 25px;
   }
 }

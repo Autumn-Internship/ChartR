@@ -4,10 +4,11 @@
 }
 
 .flexRow {
-  margin-top: 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  height: 85%;
 }
 
 .flexText {
@@ -21,13 +22,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 45vw;
+  width: 50%;
 }
 
 h2 {
   font-family: var(--usedFont);
   font-size: 2.5vh;
-  font-weight: bold;
   text-align: center;
   color: firebrick;
 }
@@ -35,14 +35,13 @@ h2 {
 h3 {
   font-family: var(--usedFont);
   font-size: 1.75vh;
-  font-weight: bold;
   text-align: center;
   color: firebrick;
 }
 
 p {
   font-family: var(--usedFont);
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.4vh;
   text-align: justify;
 }
@@ -53,65 +52,61 @@ p {
 }
 
 /*Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) { 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .flexRow {
-    margin-top: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
-  
-  .flexText{
+
+  .flexText {
     width: 75vw;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  h2{
-    font-size: 2vh;
-    margin-bottom: 5px;
+@media (min-width: 768px) and (max-width: 992px) {
+  .outerContainer {
+    height: 65%;
   }
-  h3{
+  .flexRow {
+    height: 85%;
+  }
+  h2 {
+    font-size: 1.75vh;
+  }
+  h3 {
     font-size: 1.5vh;
   }
-  p{
-    font-size: 1vh;
-    text-align: center;
+  p {
+    font-size: 1.25vh;
   }
 }
 
 /*Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .flexRow {
-    margin-top: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+@media (min-width: 992px) and (max-width: 1440px) {
+  .outerContainer {
+    height: 95%;
   }
-  
+  .flexRow {
+    flex-direction: row;
+    height: 88%;
+  }
+
   .flexText {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30vw;
+    width: 27.5vw;
   }
-  
-  .flexMap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 45vw;
+  h2 {
+    font-size: 2.25vh;
   }
-  h2{
-    font-size: 2.5vh;
+  h3 {
+    font-size: 1.75vh;
   }
-  h3{
-    font-size: 1.5vh;
-  }
-  p{
+  p {
     font-size: 1.5vh;
     text-align: justify;
   }
