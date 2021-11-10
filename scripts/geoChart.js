@@ -1,4 +1,15 @@
 let drawCityArray = [["City", "GMP", "Population"]];
+let width =window.innerWidth;
+let pointMax=5,pointMin=1;
+
+if(width>767){
+  width=width*0.45;
+}
+else{
+  width=width*0.8;
+  pointMax=pointMax*2;
+  pointMin=pointMin*2;
+}
 
 async function fetchAll() {
   try {
@@ -32,13 +43,17 @@ function drawMarkersMap() {
   var data = google.visualization.arrayToDataTable(drawCityArray);
 
   var options = {
+    sizeAxis: {
+      maxSize: pointMax,
+      minSize: pointMin,
+    },
     region: "150",
     displayMode: "markers",
     colorAxis: {
       colors: ["royalblue", "crimson"],
       maxValue: 300,
     },
-    keepAspectRatio: false,
+    width: width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,

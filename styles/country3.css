@@ -69,7 +69,17 @@ p {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+  h2{
+    font-size: 2vh;
+    margin-bottom: 5px;
+  }
+  h3{
+    font-size: 1.5vh;
+  }
+  p{
+    font-size: 1vh;
+    text-align: center;
+  }
 }
 
 /*Large devices (desktops, 992px and up) */
@@ -92,6 +102,17 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 45vw;
+  }
+  h2{
+    font-size: 2.5vh;
+  }
+  h3{
+    font-size: 1.5vh;
+  }
+  p{
+    font-size: 1.5vh;
+    text-align: justify;
   }
 }
