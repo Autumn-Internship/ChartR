@@ -29,6 +29,7 @@
   height: auto;
   align-self: center;
   cursor: pointer;
+  margin: 0;
 }
 
 .arrow:hover {
