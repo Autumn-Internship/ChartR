@@ -111,7 +111,7 @@
                  <canvas id="radarChart"></canvas>
              </div>
             </div>
-          <p onclick="next('firstComparison', 'secondComparison'); generateBarChart(); generatePolarAreaChart(); generateDoughnutChart()" class="arrow">🢂</p>
+          <p onclick="next('firstComparison', 'secondComparison');generatePolarAreaChart(); " class="arrow">🢂</p>
         </div>
     </div>
 
@@ -120,36 +120,49 @@
             <p onclick="prev('secondComparison', 'firstComparison')" class="arrow">🢀</p>
 
             <div class="flexContainer">
-                <div class="flexColumn1">
-                    <h2>Highest-paid folk in the EU (Monthly $)</h2>
-                    <div class="cmpDiv" >
-                        <canvas id="polarAreaChart"></canvas>
+                    <div class="flexColumn1">
+                        <h2>Highest-paid folk in the EU (Monthly $)</h2>
+                        <div class="cmpDiv" >
+                            <canvas id="polarAreaChart"></canvas>
+                        </div>
                     </div>
-                </div>
+            </div>
+            <p onclick="next('secondComparison', 'thirdComparison'); generateBarChart();" class="arrow">🢂</p>
+        </div>
+    </div>
         
+
+    <div class="thirdComparison">
+        <div class="flexRow2">
+            <p onclick="prev('thirdComparison', 'secondComparison')" class="arrow">🢀</p>
+
+            <div class="flexContainer">           
                 <div class="flexColumn1">
                     <h2>Largest economies of the EU (Trillion $)</h2>
                     <div class="cmpDiv" >
                         <canvas id="barChart"></canvas>
                     </div>
                 </div>
-        
-                <div class="flexColumn1">
-                    <h2>Biggest exports in the EU (Trillion $)</h2>
-                    <div class="cmpDiv">
-                        <canvas id="doughnutChart"></canvas>
-                    </div>
+            </div>
+            <p onclick="next('thirdComparison', 'fourthComparison'); generateDoughnutChart()" class="arrow">🢂</p>
+        </div>
+    </div>
+     <div class="fourthComparison">
+        <p onclick="prev('fourthComparison', 'thirdComparison')" class="arrow">🢀</p>
+        <div class="flexRow2">
+            
+            <div class="flexColumn1">
+                <h2>Biggest exports in the EU (Trillion $)</h2>
+                <div class="cmpDiv">
+                    <canvas id="doughnutChart"></canvas>
                 </div>
             </div>
-
-            <p class="arrow">🢂</p>
         </div>
-        </div>
-
+        <p class="arrow arrowN">🢂</p>
+     </div>
 <footer>
     <div class="footer"> ChartR team [Sale Razvan-Stelian & Andrei Grigor] @ 2021</div>
 </footer>
-</div>
 </main>
 
 </body>

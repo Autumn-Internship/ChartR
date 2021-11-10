@@ -6,7 +6,7 @@
 }
 
 h1 {
-  font-size: 25px !important;
+  font-size: 25px;
 }
 
 #cmpForm {
@@ -89,8 +89,10 @@ select {
 }
 
 #notePar {
+  margin-top: 1.5px;
   text-align: center;
   font-weight: bold;
+  font-size: 12.5px;
 }
 
 /*Small devices (landscape phones, 576px and up) */
@@ -104,15 +106,30 @@ select {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .topOfCmp {
     flex-direction: column-reverse;
+  }
+
+  #graphDiv{
+    margin-top: 25px;
+  }
+  
+  h1{
+    font-size: 20px;
   }
 }
 
 /*Large devices (desktops, 992px and up) */
-@media (min-width: 1440px) {
+@media (min-width: 1030px) {
   .topOfCmp {
     flex-flow: row;
+    
+  }
+  #graphDiv{
+    margin-top: 50px;
+  }
+  h1{
+    font-size: 25px;
   }
 }

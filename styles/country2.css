@@ -16,17 +16,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 100px;
+  gap: 10vw;
 }
 
-
-.flexRow2 {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 100px;
-}
 
 .flexColumn {
   display: flex;
@@ -79,6 +71,7 @@ h2 {
 }
 
 .arrow {
+  margin-top: 9vh;
   font-size: 4.5vh;
   color: #d03711;
   align-self: center;
@@ -91,14 +84,22 @@ h2 {
   transition: 0.5s;
 }
 
+.arrowN{
+  margin-top: 12vh;
+}
+
 .firstComparison {
+  height: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.secondComparison {
+.secondComparison,
+.thirdComparison,
+.fourthComparison {
+  height: 80%;
   opacity: 0;
   display: none;
   flex-direction: row;
@@ -118,13 +119,8 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   gap: 50px;
-}
-
-.flexColumn1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 @media only screen and (min-width: 320px) {
@@ -136,7 +132,7 @@ h2 {
     margin-left: 0;
   }
   .cmpDiv {
-    max-width: 350px;
+    max-width: 450px;
   }
 }
 
@@ -146,8 +142,25 @@ h2 {
     flex-direction: column;
   }
   .radarChart {
-    width: 50vw;
+    width: 35vw;
     margin-left: 0;
+  }
+  #country1,
+  #country2{
+    font-size: 1.2vh;
+    width: 15vh;
+    height: 4vw;
+  }
+  #compareButton {
+    width: fit-content;
+    height: 4vh;
+    font-size: 1.5vh;
+    margin-top: 15%;
+  }
+
+  .cmpDiv{
+    max-width: 40vw;
+    
   }
 }
 
@@ -159,5 +172,11 @@ h2 {
   .radarChart {
     width: 27.5vw;
     margin-left: 150px;
+  }
+  #country1,
+  #country2 {
+    width: 15vw;
+    height: 5vh;
+    font-size: 1.75vh;
   }
 }
