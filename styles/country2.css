@@ -90,6 +90,7 @@ h2 {
   transition: 0.5s;
 }
 
+
 .arrowN{
   margin-top: 12vh;
 }
@@ -163,6 +164,10 @@ h2 {
     font-size: 1.5vh;
     margin-top: 15%;
   }
+  .arrow{
+    width: 5vw;
+    height: auto;
+  }
 
   .cmpDiv{
     max-width: 40vw;
@@ -184,5 +189,9 @@ h2 {
     width: 15vw;
     height: 5vh;
     font-size: 1.75vh;
+  }
+  .arrow{
+    width: 2.25vw;
+    height: auto;
   }
 }
