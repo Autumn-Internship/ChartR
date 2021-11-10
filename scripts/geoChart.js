@@ -1,14 +1,15 @@
 let drawCityArray = [["City", "GMP", "Population"]];
 let width =window.innerWidth;
-let pointMax=5,pointMin=1;
+let pointMax=10,pointMin=2;
 
 if(width>767){
   width=width*0.45;
+  
 }
 else{
   width=width*0.8;
-  pointMax=pointMax*2;
-  pointMin=pointMin*2;
+  pointMax=pointMax/4;
+  pointMin=pointMin/4;
 }
 
 async function fetchAll() {
