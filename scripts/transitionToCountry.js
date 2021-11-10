@@ -32,7 +32,7 @@ function nextCountry() {
       for (let i = 4; i < entries.length; i++)
         document.querySelectorAll(".currentCountry h2")[
           i - 4
-        ].innerHTML = `${entries[i][0]}: ${entries[i][1]}`;
+        ].innerHTML = `<b>${entries[i][0]}:</b> <i>${entries[i][1]}</i>`;
     }, 500);
 
     setTimeout(function () {
@@ -58,7 +58,7 @@ function prevCountry() {
       for (let i = 4; i < entries.length; i++)
         document.querySelectorAll(".currentCountry h2")[
           i - 4
-        ].innerHTML = `${entries[i][0]}: ${entries[i][1]}`;
+        ].innerHTML = `<b>${entries[i][0]}:</b> <i>${entries[i][1]}</i>`;
     }, 500);
 
     setTimeout(function () {

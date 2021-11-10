@@ -33,7 +33,7 @@ function drawExportsMap() {
       maxValue: 0.8,
     },
     legend: "none",
-    width: 0.4 * width,
+    width: width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,

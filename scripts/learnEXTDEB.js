@@ -34,7 +34,7 @@ function drawExtDebtMap() {
       maxValue: 4,
     },
     legend: "none",
-    width: 0.4 * width,
+    width: width,
     backgroundColor: {
       stroke: "black",
       strokeWidth: 5,
