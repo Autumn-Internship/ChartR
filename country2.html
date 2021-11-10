@@ -40,7 +40,6 @@
     <div class="firstComparison">
         <div class="flexRow1">
             <img src="imagini/lArrow.png" class="arrow">
-            <div class="flexContainer">
                 <div class="flexColumn">
                     <h2>Select first country</h2>
                     <select name="country1" id="country1">
@@ -73,7 +72,6 @@
                         <option value="Malta">Malta</option>
                     </select>
                  
-                 
                     <h2>Select second country</h2>
                     <select name="country2" id="country2">
                         <option value="Germany">Germany</option>
@@ -104,66 +102,50 @@
                         <option value="Cyprus">Cyprus</option>
                         <option value="Malta">Malta</option>
                     </select>
-                 </form>
                  <button id="compareButton" onclick="generateRadarChart()">GENERATE</button>
              </div>
              <div class="radarChart">
                  <canvas id="radarChart"></canvas>
              </div>
-            </div>
-
             <img src="imagini/rArrow.png" class="arrow" onclick="next('firstComparison', 'secondComparison'); generatePolarAreaChart();">
     </div>
 
     </div>
 
     <div class="secondComparison">
-        <div class="flexRow2">
             <img src="imagini/lArrow.png" class="arrow" onclick="prev('secondComparison', 'firstComparison')">
-
-            <div class="flexContainer">
-                    <div class="flexColumn1">
-                        <h2>Highest-paid folk in the EU (Monthly $)</h2>
-                        <div class="cmpDiv" >
-                            <canvas id="polarAreaChart"></canvas>
-                        </div>
+                    <div>
+                    <h2>Highest-paid folk in the EU (Monthly $)</h2>
+                    <div class="cmpDiv" >
+                        <canvas id="polarAreaChart"></canvas>
                     </div>
-            </div>
+                    </div>
             <img src="imagini/rArrow.png" class="arrow" onclick="next('secondComparison', 'thirdComparison'); generateBarChart();">
-        </div>
     </div>
         
 
     <div class="thirdComparison">
-        <div class="flexRow2">
-            <img src="imagini/lArrow.png" class="arrow" onclick="prev('thirdComparison', 'secondComparison')">
-
-            <div class="flexContainer">           
-                <div class="flexColumn1">
+            <img src="imagini/lArrow.png" class="arrow" onclick="prev('thirdComparison', 'secondComparison')">           
+                <div>
                     <h2>Largest economies of the EU (Trillion $)</h2>
                     <div class="cmpDiv" >
                         <canvas id="barChart"></canvas>
                     </div>
-                </div>
             </div>
-
             <img src="imagini/rArrow.png" class="arrow" onclick="next('thirdComparison', 'fourthComparison'); generateDoughnutChart()">
-
-        </div>
     </div>
+
      <div class="fourthComparison">
         <img src="imagini/lArrow.png" class="arrow" onclick="prev('fourthComparison', 'thirdComparison')">
-        <div class="flexRow2">
-            
-            <div class="flexColumn1">
+            <div>
                 <h2>Biggest exports in the EU (Trillion $)</h2>
                 <div class="cmpDiv">
                     <canvas id="doughnutChart"></canvas>
                 </div>
             </div>
-        </div>
         <img src="imagini/rArrow.png" class="arrow" >
      </div>
+
 <footer>
     <div class="footer"> ChartR team [Sale Razvan-Stelian & Andrei Grigor] @ 2021</div>
 </footer>

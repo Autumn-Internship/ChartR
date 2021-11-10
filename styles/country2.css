@@ -3,31 +3,17 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
+.outerContainer {
+  height: 75%;
+  width: 75%;
+}
+
 .flexRow1 {
-  margin-top: 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  gap: 50px;
+  gap: 10vh;
 }
-
-.flexRow2 {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 10vw;
-}
-
-
-.flexRow2 {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 100px;
-}
-
 
 .flexColumn {
   display: flex;
@@ -60,11 +46,9 @@ h2 {
 }
 
 #compareButton {
-  width: fit-content;
-  height: 5vh;
-  align-self: center;
   text-align: center;
-  font-size: 1.75vh;
+  font-size: 1.5vh;
+  padding: 1.75vh 2vw;
   border-radius: 10%;
   border: 0.225vh solid black;
   margin-top: 15%;
@@ -90,13 +74,8 @@ h2 {
   transition: 0.5s;
 }
 
-
-.arrowN{
-  margin-top: 12vh;
-}
-
 .firstComparison {
-  height: 80%;
+  height: 85%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -115,19 +94,10 @@ h2 {
 }
 
 .radarChart {
-  margin-left: 150px;
   width: 27.5vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.flexContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 50px;
 }
 
 @media only screen and (min-width: 320px) {
@@ -153,25 +123,18 @@ h2 {
     margin-left: 0;
   }
   #country1,
-  #country2{
+  #country2 {
     font-size: 1.2vh;
     width: 15vh;
     height: 4vw;
   }
-  #compareButton {
-    width: fit-content;
-    height: 4vh;
-    font-size: 1.5vh;
-    margin-top: 15%;
-  }
-  .arrow{
+  .arrow {
     width: 5vw;
     height: auto;
   }
 
-  .cmpDiv{
+  .cmpDiv {
     max-width: 40vw;
-    
   }
 }
 
@@ -182,7 +145,6 @@ h2 {
   }
   .radarChart {
     width: 27.5vw;
-    margin-left: 150px;
   }
   #country1,
   #country2 {
@@ -190,8 +152,7 @@ h2 {
     height: 5vh;
     font-size: 1.75vh;
   }
-  .arrow{
+  .arrow {
     width: 2.25vw;
-    height: auto;
   }
 }

@@ -1,15 +1,9 @@
 let drawCityArray = [["City", "GMP", "Population"]];
-let width =window.innerWidth;
-let pointMax=5,pointMin=1;
+let width = window.innerWidth;
 
-if(width>767){
-  width=width*0.45;
-}
-else{
-  width=width*0.8;
-  pointMax=pointMax*2;
-  pointMin=pointMin*2;
-}
+if (width > 767) width = width * 0.45;
+else width = width * 0.8;
+let point = width * 0.015;
 
 async function fetchAll() {
   try {
@@ -44,8 +38,7 @@ function drawMarkersMap() {
 
   var options = {
     sizeAxis: {
-      maxSize: pointMax,
-      minSize: pointMin,
+      maxSize: point,
     },
     region: "150",
     displayMode: "markers",
