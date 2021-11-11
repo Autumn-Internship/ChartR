@@ -45,5 +45,4 @@ The primary topics we are interested in covering macroeconomic data, currencies,
 
 #### [Week 4]
 
-- Adjust the pages to be more responsive
-- TBA
+- Adjust the pages to be more responsive ✓
