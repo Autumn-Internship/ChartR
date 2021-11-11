@@ -90,12 +90,12 @@ async function generateRadarChart() {
     labels: [
       "HDI",
       "Exports",
-      "Average Gross Salary",
+      "Avg Gross Sal",
       "GDP",
-      "GDP per Capita",
+      "GDP / Capita",
       "GINI",
-      "External Debt",
-      "Average Net Salary",
+      "Avg Net Sal",
+      "Ext Debt",
     ],
     datasets: [
       {
@@ -122,8 +122,8 @@ async function generateRadarChart() {
             firstCountry["Per Capita (PPP)"]
           ),
           percentile(allGINI, allGINI.length, firstCountry["GINI"]),
-          percentile(allDebt, allDebt.length, firstCountry["External Debt"]),
           percentile(allANS, allANS.length, firstCountry["Average Net Salary"]),
+          percentile(allDebt, allDebt.length, firstCountry["External Debt"]),
         ],
       },
       {
@@ -150,12 +150,12 @@ async function generateRadarChart() {
             secondCountry["Per Capita (PPP)"]
           ),
           percentile(allGINI, allGINI.length, secondCountry["GINI"]),
-          percentile(allDebt, allDebt.length, secondCountry["External Debt"]),
           percentile(
             allANS,
             allANS.length,
             secondCountry["Average Net Salary"]
           ),
+          percentile(allDebt, allDebt.length, secondCountry["External Debt"]),
         ],
       },
     ],

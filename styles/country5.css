@@ -97,7 +97,7 @@ p {
   }
   .flexRow {
     flex-direction: column;
-    height: 100%;
+    height: 98%;
   }
   .flexText {
     width: 80%;
