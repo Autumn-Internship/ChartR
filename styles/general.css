@@ -82,6 +82,7 @@ footer {
 .footer {
   position: absolute;
   bottom: 0;
+  margin-bottom: 0.75vh;
   font-size: 1.5vh;
   font-weight: bold;
   color: black;

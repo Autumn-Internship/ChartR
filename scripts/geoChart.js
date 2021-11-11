@@ -3,7 +3,8 @@ let width = window.innerWidth;
 
 if (width > 767) width = width * 0.45;
 else width = width * 0.8;
-let point = width * 0.015;
+let point = width * 0.018;
+let minPoint = width * 0.006;
 
 async function fetchAll() {
   try {
@@ -38,6 +39,7 @@ function drawMarkersMap() {
 
   var options = {
     sizeAxis: {
+      minSize: minPoint,
       maxSize: point,
     },
     region: "150",

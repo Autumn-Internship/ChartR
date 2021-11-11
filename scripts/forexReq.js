@@ -7,7 +7,8 @@ const dummyLabel = new Array(300);
 let country;
 let compared1;
 let compared2;
-let lbl1='', lbl2='';
+let lbl1 = "",
+  lbl2 = "";
 let data1;
 let data2;
 let currentData;
@@ -58,7 +59,7 @@ function drawPlot() {
   currentValuesChart = new Chart(curChart, {
     type: "bar",
     data: {
-      labels: ["DKK", "SEK", "BGN", "CZK", "HRK","HUF", "PLN", "RON"],
+      labels: ["DKK", "SEK", "BGN", "CZK", "HRK", "HUF", "PLN", "RON"],
       datasets: [
         {
           label: "Values in comparison to Euro",
@@ -83,13 +84,14 @@ function drawPlot() {
             "rgba(255,243,194, 0.7)",
           ],
           borderColor: [
-            "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)",
-            "rgba(255,243,194, 1)",
+            "rgba(0,0,0, 0.75)",
+            "rgba(0,0,0, 0.75)",
+            "rgba(0,0,0, 0.75)",
+            "rgba(0,0,0, 0.75)",
+            "rgba(0,0,0, 0.75)",
+            "rgba(0,0,0, 0.75)",
+            "rgba(0,0,0, 0.75)",
+            "rgba(0,0,0, 0.75)",
           ],
         },
       ],
@@ -106,25 +108,23 @@ function drawPlot() {
 }
 
 function getLabels() {
+  if (compared1 == "629") lbl1 = "Bulgarian Lev";
+  else if (compared1 == "659") lbl1 = "Croatian Kuna";
+  else if (compared1 == "645") lbl1 = "Czech Krouna";
+  else if (compared1 == "9") lbl1 = "Danish Krone";
+  else if (compared1 == "661") lbl1 = "Hungarian Forint";
+  else if (compared1 == "704") lbl1 = "Polish Zolty";
+  else if (compared1 == "707") lbl1 = "Romanian Leu";
+  else if (compared1 == "68") lbl1 = "Sweedish Krona";
 
-  if(compared1== '629') lbl1='Bulgarian Lev'
-  else if(compared1== '659') lbl1='Croatian Kuna'
-  else if(compared1== '645') lbl1='Czech Krouna'
-  else if(compared1== '9') lbl1='Danish Krone'
-  else if(compared1== '661') lbl1='Hungarian Forint'
-  else if(compared1== '704') lbl1='Polish Zolty'
-  else if(compared1== '707') lbl1='Romanian Leu'
-  else if(compared1== '68') lbl1='Sweedish Krona'
-  
-  if(compared2 == '629') lbl2='Bulgarian Lev'
-  else if(compared2 == '659') lbl2='Croatian Kuna'
-  else if(compared2 == '645') lbl2='Czech Krouna'
-  else if(compared2 == '9') lbl2='Danish Krone'
-  else if(compared2 == '661') lbl2='Hungarian Forint'
-  else if(compared2 == '704') lbl2='Polish Zolty'
-  else if(compared2 == '707') lbl2='Romanian Leu'
-  else if(compared2 == '68') lbl2='Sweedish Krona'
-
+  if (compared2 == "629") lbl2 = "Bulgarian Lev";
+  else if (compared2 == "659") lbl2 = "Croatian Kuna";
+  else if (compared2 == "645") lbl2 = "Czech Krouna";
+  else if (compared2 == "9") lbl2 = "Danish Krone";
+  else if (compared2 == "661") lbl2 = "Hungarian Forint";
+  else if (compared2 == "704") lbl2 = "Polish Zolty";
+  else if (compared2 == "707") lbl2 = "Romanian Leu";
+  else if (compared2 == "68") lbl2 = "Sweedish Krona";
 }
 
 async function getData() {

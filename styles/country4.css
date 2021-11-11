@@ -3,7 +3,7 @@
     "Lucida Sans", Arial, sans-serif;
 }
 .outerContainer {
-  height: 90%;
+  height: 85%;
 }
 
 h1 {
@@ -105,16 +105,15 @@ select {
     height: 45%;
     margin-top: 7vh;
   }
-  h1{
+  h1 {
     text-align: center;
   }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1029px) {
   .outerContainer {
-    height: 80%;
+    height: 90%;
   }
   .topOfCmp {
     flex-direction: column-reverse;
@@ -125,15 +124,15 @@ select {
   h1 {
     font-size: 20px;
   }
-  #CmpChart{
+  #CmpChart {
     margin-left: 10vw !important;
   }
 }
 
 /*Large devices (desktops, 992px and up) */
-@media (min-width: 1030px){
+@media (min-width: 1030px) and (max-width: 1440px) {
   .outerContainer {
-    height: 70%;
+    height: 65%;
   }
   .topOfCmp {
     flex-flow: row;
