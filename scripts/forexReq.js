@@ -58,7 +58,7 @@ function drawPlot() {
   currentValuesChart = new Chart(curChart, {
     type: "bar",
     data: {
-      labels: ["DKK", "SEK", "BGN", "CZK", "HRK", "PLN", "RON"],
+      labels: ["DKK", "SEK", "BGN", "CZK", "HRK","HUF", "PLN", "RON"],
       datasets: [
         {
           label: "Values in comparison to Euro",
@@ -68,6 +68,7 @@ function drawPlot() {
             currentHigh[2],
             currentHigh[3],
             currentHigh[4],
+            currentHigh[5],
             currentHigh[6],
             currentHigh[7],
           ],
@@ -97,6 +98,7 @@ function drawPlot() {
       scales: {
         y: {
           beginAtZero: true,
+          max: 35,
         },
       },
     },

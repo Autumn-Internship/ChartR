@@ -90,12 +90,12 @@ async function generateRadarChart() {
     labels: [
       "HDI",
       "Exports",
-      "Average Gross Salary",
+      "Avg. Gross Sal.",
       "GDP",
       "GDP per Capita",
       "GINI",
-      "External Debt",
-      "Average Net Salary",
+      "Ext. Debt",
+      "Avg. Net Sal.",
     ],
     datasets: [
       {
