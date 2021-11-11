@@ -51,27 +51,15 @@ p {
   transition: 0.5s;
 }
 
-/*Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .flexRow {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .flexText {
-    width: 75vw;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .outerContainer {
-    height: 65%;
+    height: 95%;
+    width: 95%;
   }
   .flexRow {
-    height: 85%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
   }
   h2 {
     font-size: 1.75vh;
@@ -82,32 +70,31 @@ p {
   p {
     font-size: 1.25vh;
   }
+  .flexMap {
+    width: auto;
+  }
+  header .mobileFlex {
+    height: 95vh;
+  }
+  .flexText {
+    width: 80%;
+  }
 }
 
-/*Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1299px) {
   .outerContainer {
-    height: 95%;
+    height: 65%;
   }
   .flexRow {
-    flex-direction: row;
-    height: 88%;
-  }
-
-  .flexText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 27.5vw;
+    height: 90%;
   }
   h2 {
-    font-size: 2.25vh;
-  }
-  h3 {
     font-size: 1.75vh;
   }
-  p {
+  h3 {
     font-size: 1.5vh;
-    text-align: justify;
+  }
+  p {
+    font-size: 1.25vh;
   }
 }
